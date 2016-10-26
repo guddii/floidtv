@@ -1,2 +1,2 @@
 # floidtv
-A static page for floidt
+A static page for floidtv.de
