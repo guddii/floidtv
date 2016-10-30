@@ -1,0 +1,31 @@
+{
+  "name": "floidtv",
+  "version": "1.0.0",
+  "description": "A static page for floidtv",
+  "main": "index.js",
+  "engines": {
+    "node": "5.9.1"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ejs": "2.4.1",
+    "express": "4.13.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guddii/floidtv.git"
+  },
+  "keywords": [
+    "static",
+    "page"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guddii/floidtv/issues"
+  },
+  "homepage": "https://github.com/guddii/floidtv#readme"
+}

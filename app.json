@@ -1,0 +1,8 @@
+{
+  "name": "floidtv",
+  "description": "A static page for floidtv",
+  "repository": "https://github.com/guddii/floidtv",
+  "logo": "http://www.floidtv.de/fileadmin/floid/gfx/logo_orange2.jpg",
+  "keywords": ["node", "express", "static"],
+  "image": "heroku/nodejs"
+}
