@@ -11,8 +11,8 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
-    "ejs": "2.4.1",
-    "express": "4.13.3"
+    "express": "4.13.3",
+    "twig": "^0.10.3"
   },
   "repository": {
     "type": "git",
