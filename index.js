@@ -1,5 +1,17 @@
-var express = require('express');
-var app = express();
+const postcssMiddleware = require('postcss-middleware');
+const express = require('express');
+const app = express();
+const path = require('path');
+
+app.use('/stylesheets', postcssMiddleware({
+  src: function src(req) {
+    return path.join('app/stylesheets', req.path);
+  },
+
+  plugins: [
+    require('postcss-cssnext')()
+  ]
+}));
 
 app.set('port', (process.env.PORT || 5000));
 

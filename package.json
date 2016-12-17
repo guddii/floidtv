@@ -12,6 +12,9 @@
   },
   "dependencies": {
     "express": "4.13.3",
+    "postcss-cssnext": "^2.9.0",
+    "postcss-import": "^9.0.0",
+    "postcss-middleware": "^1.1.2",
     "twig": "^0.10.3"
   },
   "repository": {
