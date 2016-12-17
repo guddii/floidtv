@@ -30,3 +30,7 @@ img
 
   flex: none;
 }
+
+button {
+  display: block;
+}
