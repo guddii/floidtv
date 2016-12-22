@@ -1,13 +1,14 @@
-:root
-{
+@import url("../components/navigation/navigation.css");
+@import url("../components/separator/separator.css");
+@import url("../components/brand/brand.css");
+@import url("../components/stage/stage.css");
+
+:root {
   --backgroundColor: #2a2a2a;
 }
 
 html,
-body
-{
-  display: flex;
-  overflow: hidden;
+body {
 
   height: 100%;
   margin: 0;
@@ -15,22 +16,6 @@ body
 
   background-color: var(--backgroundColor);
 
-  justify-content: center;
-  align-items: center;
   color: #ffffff;
 }
 
-img
-{
-  width: 646px;
-  height: 180px;
-  margin-bottom: 20px;
-
-  transform: scale(.25);
-
-  flex: none;
-}
-
-button {
-  display: block;
-}

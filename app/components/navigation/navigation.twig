@@ -1,0 +1,9 @@
+<nav class="navigation">
+  <ul class="navigation__list">
+    {% for m in nav %}
+      <li class="navigation__item">
+        {% include '../link/link.twig' with { 'text': m.text} %}
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

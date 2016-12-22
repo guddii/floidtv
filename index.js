@@ -15,21 +15,26 @@ app.use('/stylesheets', postcssMiddleware({
 
 app.set('port', (process.env.PORT || 5000));
 
-app.use('/', express.static(__dirname + '/app/public'));
+app.use('/', express.static(__dirname + '/app'));
 
 // views is directory for all template files
-app.set('views', __dirname + '/app/views');
-app.set('view engine', 'ejs');
+app.set('views', __dirname + '/app/views/');
+app.set('view engine', 'twig');
 
 // This section is optional and used to configure twig.
 app.set('twig options', {
-  // strict_variables: false
+  strict_variables: false
 });
 
 app.get('/', function get(req, res) {
   'use strict';
-  res.render('pages/index.twig', {
-    title: 'floid'
+  res.render('front.twig', {
+    title: 'Das studentische Fernsehen',
+    nav: [
+      {text: 'Über uns'},
+      {text: 'Blog'},
+      {text: 'Sendungen'}
+    ]
   });
 });
 
