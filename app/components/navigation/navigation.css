@@ -1,0 +1,21 @@
+@import url("../link/link.css");
+
+@media screen {
+
+  .navigation,
+  .navigation__list,
+  .navigation__item {
+    display: inline-block;
+  }
+
+  .navigation {
+    float: right;
+  }
+
+  .navigation__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+}

@@ -1,0 +1,11 @@
+{% extends "master.twig" %}
+{% import "../components/forms/forms.twig" as forms %}
+
+{% block main %}
+
+  <p>{{ forms.input('username') }}</p>
+  <p>{{ forms.input('password', null, 'password') }}</p>
+
+
+
+{% endblock %}

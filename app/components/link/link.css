@@ -1,0 +1,18 @@
+@media screen {
+
+  .link {
+    display: inline-block;
+    padding: 20px 10px;
+  }
+
+  .link--main {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .link--main:focus,
+  .link--main:hover {
+    opacity: 0.5;
+  }
+
+}

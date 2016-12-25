@@ -1,0 +1,10 @@
+@media screen {
+
+  .separator {
+    border: none;
+    border-top: #1f1f1f 1px solid;
+    border-bottom: #3a3a3a 1px solid;
+    margin: 0;
+  }
+
+}
