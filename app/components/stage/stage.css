@@ -1,0 +1,19 @@
+.gallery {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  margin: auto;
+  font-size: 0;
+  width: 100%;
+  -webkit-scroll-snap-type: mandatory;
+  -ms-scroll-snap-type: mandatory;
+  scroll-snap-type: mandatory;
+  -webkit-scroll-snap-points-x: repeat(350px);
+  -ms-scroll-snap-points-x: repeat(350px);
+  scroll-snap-points-x: repeat(350px);
+}
+
+img {
+  width: 560px;
+  /* height: 315px; */
+}
