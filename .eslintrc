@@ -26,8 +26,7 @@
     "objectLiteralShorthandProperties": true,
     "spread": true,
     "superInFunctions": true,
-    "templateStrings": true,
-    "jsx": true
+    "templateStrings": true
   },
   "rules": {
     "no-var": 2,
@@ -326,5 +325,25 @@
         // space here to support sprockets directives
       }
     ]
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "arrowFunctions": true,
+      "blockBindings": true,
+      "classes": true,
+      "defaultParams": true,
+      "destructuring": true,
+      "forOf": true,
+      "generators": false,
+      "modules": true,
+      "objectLiteralComputedProperties": true,
+      "objectLiteralDuplicateProperties": false,
+      "objectLiteralShorthandMethods": true,
+      "objectLiteralShorthandProperties": true,
+      "spread": true,
+      "superInFunctions": true,
+      "templateStrings": true
+    }
   }
 }
