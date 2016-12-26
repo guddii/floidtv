@@ -2,4 +2,5 @@ eslint:
   enabled: true
 
 scss:
+  enabled: true
   config_file: .css-lint.yml
