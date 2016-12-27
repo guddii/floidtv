@@ -1,15 +1,19 @@
 @media screen {
 
-  .brand:focus,
-  .brand:hover {
-    opacity: 0.5;
+  .brand {
+    display: block;
+  }
+
+  .brand:focus .brand__image,
+  .brand:hover .brand__image {
+    fill: #F39D00;
   }
 
   .brand__image {
     display: inline-block;
     width: auto;
     max-width: 135px;
-    fill: #F39D00;
+    fill: #CCC;
     padding: 10px;
   }
 

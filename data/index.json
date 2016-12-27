@@ -1,0 +1,19 @@
+{
+  "data": {
+    "title": "Das studentische Fernsehen der HTWK Leipzig",
+    "links": [
+      {
+        "text": "Über uns",
+        "reference": "#Über uns"
+      },
+      {
+        "text": "Blog",
+        "reference": "#Blog"
+      },
+      {
+        "text": "Sendungen",
+        "reference": "#Sendungen"
+      }
+    ]
+  }
+}

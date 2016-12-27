@@ -1,0 +1,12 @@
+{% macro default(links) %}
+  {% import '../brand/brand.twig' as brand %}
+  {% import '../navigation/navigation.twig' as navigation %}
+  <div class="masthead">
+    <div class="masthead__brand">
+      {{ brand.logo() }}
+    </div>
+    <div class="masthead__navigation">
+      {{ navigation.priamry({entries: links}) }}
+    </div>
+  </div>
+{% endmacro %}

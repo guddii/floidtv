@@ -8,10 +8,6 @@
     display: inline-block;
   }
 
-  .navigation {
-    float: right;
-  }
-
   .navigation__list {
     list-style: none;
     padding: 0;

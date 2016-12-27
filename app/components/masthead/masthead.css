@@ -1,0 +1,17 @@
+@media screen {
+
+  .masthead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .masthead__brand {
+    min-width: 60px;
+  }
+
+  .masthead__navigation {
+    text-align: right;
+  }
+
+}

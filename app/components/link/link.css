@@ -2,12 +2,11 @@
 
   .link {
     display: inline-block;
-    padding: 20px 10px;
+    color: #1f1f1f;
   }
 
   .link--main {
-    color: #ffffff;
-    text-decoration: none;
+    padding: 20px 10px;
   }
 
   .link--main:focus,

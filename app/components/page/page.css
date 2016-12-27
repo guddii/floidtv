@@ -1,0 +1,21 @@
+@media screen {
+
+  .page {
+    margin: 0;
+    padding: 0;
+  }
+
+  .page__separator {
+    display: block;
+    border: none;
+    border-top: #CCC 1px solid;
+    margin: 0;
+    clear: both;
+    position: static;
+  }
+
+  .page__footer {
+    padding: 5px 10px;
+  }
+
+}

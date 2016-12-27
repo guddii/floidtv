@@ -12,12 +12,12 @@ gulp.task('scripts-watch', ['scripts'], (done) => {
   done();
 });
 
-gulp.task('assets-watch', ['scripts'], (done) => {
+gulp.task('assets-watch', ['assets'], (done) => {
   browserSync.reload();
   done();
 });
 
-gulp.task('templates-watch', ['scripts'], (done) => {
+gulp.task('templates-watch', ['templates'], (done) => {
   browserSync.reload();
   done();
 });

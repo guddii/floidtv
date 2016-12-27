@@ -11,24 +11,7 @@ Text Domain: floid
 Tags: floid
 */
 
-@import url("/components/navigation/navigation.css");
-@import url("/components/separator/separator.css");
-@import url("/components/brand/brand.css");
-
-:root {
-  --backgroundColor: #2a2a2a;
-}
-
-html,
-body {
-
-  height: 100%;
-  margin: 0;
-  padding: 0;
-
-  background-color: var(--backgroundColor);
-
-  color: #ffffff;
-}
-
-
+@import url("./components/brand/brand.css");
+@import url("./components/masthead/masthead.css");
+@import url("./components/navigation/navigation.css");
+@import url("./components/page/page.css");
