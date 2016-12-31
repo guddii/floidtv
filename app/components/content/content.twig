@@ -1,0 +1,20 @@
+{% macro default(post) %}
+
+  <div class="content content--{{ post.post_type }}">
+
+    <header content="content__head">
+      <h2 content="content__heading">{{ post.title }}</h2>
+    </header>
+
+    <p class="content__body">
+      {{ post.content }}
+    </p>
+
+    <footer class="content__footer">
+      <a href="{{ post.author.path }}"> {{ post.author.name }} </a><br>
+      {{ post.post_date|date }}
+    </footer>
+
+  </div>
+
+{% endmacro %}
