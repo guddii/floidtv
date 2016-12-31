@@ -1,0 +1,10 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  color: var(--grayDefault);
+  line-height: 1;
+}
+
+.footer__links {
+  text-align: right;
+}

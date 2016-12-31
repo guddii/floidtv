@@ -1,0 +1,7 @@
+.content__video {
+  max-width: 100%;
+}
+
+.content__footer{
+  color: var(--grayDefault);
+}

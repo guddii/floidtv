@@ -1,0 +1,28 @@
+@media screen {
+
+  .link {
+    display: inline-block;
+    color: var(--grayDefault);
+  }
+
+  .link--main {
+    padding: 20px 10px;
+  }
+
+  .link--cta {
+    border-left: 1px solid var(--grayDefault);
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .link--footer {
+    color: var(--grayDefault);
+    font-size: 75%;
+  }
+
+  .link:focus,
+  .link:hover {
+    opacity: 0.5;
+  }
+
+}

@@ -1,0 +1,13 @@
+{% macro default(links) %}
+  {% import '../link/link.twig' as link %}
+  <div class="footer">
+    <div class="footer__disclaimer">
+      <small>floid, das studentische Fernsehen der HTWK Leipzig</small>
+      <br>
+      <small>Ein Projekt der Studenten der Fakultät Medien. &copy; Copyright {{ "now"|date('Y') }}.</small>
+    </div>
+    <div class="footer__links">
+      {{ link.default({ "classes": ["link--footer"], "title": "Impressum", "get_link": "/page/4" }) }}
+    </div>
+  </div>
+{% endmacro %}

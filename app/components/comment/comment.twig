@@ -1,0 +1,22 @@
+{% macro entry(comment) %}
+  <div class="comment__entry comment__entry--{{ comment.comment_type }}">
+    <h5 class="comment__author">{{ comment.author.name }} says</h5>
+    <div class="comment__content">{{ comment.comment_content|wpautop }}</div>
+  </div>
+{% endmacro %}
+
+{% macro default(comments) %}
+  {% import _self as comment %}
+
+<section class="comment">
+  <div class="comment__respond">
+    <h3>Comments</h3>
+    {% if fn %}{{ fn('comment_form') }}{% endif %}
+  </div>
+  <div class="comment__responses">
+    {% for cmt in comments %}
+      {{ comment.entry(comment:cmt) }}
+    {% endfor %}
+  </div>
+</section>
+{% endmacro %}

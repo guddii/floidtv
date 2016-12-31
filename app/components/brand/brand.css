@@ -1,0 +1,27 @@
+@media screen {
+
+  .brand {
+    display: block;
+  }
+
+  .brand:focus .brand__image,
+  .brand:hover .brand__image {
+    fill: #F39D00;
+  }
+
+  .brand__image {
+    display: inline-block;
+    width: 65px;
+    height: 40px;
+    fill: var(--grayDefault);
+  }
+
+}
+
+@media print {
+
+  .brand__image {
+    display: none;
+  }
+
+}

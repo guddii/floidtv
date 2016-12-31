@@ -1,0 +1,28 @@
+{% macro default(content, config) %}
+  <div class="alert alert--{{ config.modifier|default('danger') }}" role="alert">
+    <h1 class="alert__heading">{{ content.title }}</h1>
+    {% for text in content.texts %}
+      <p>{{ text }}</p>
+    {% endfor %}
+  </div>
+{% endmacro %}
+
+{% macro danger(content) %}
+  {% import _self as alert %}
+  {{ alert.default(content) }}
+{% endmacro %}
+
+{% macro info(content) %}
+  {% import _self as alert %}
+  {{ alert.default(content, {"modifier": "info"}) }}
+{% endmacro %}
+
+{% macro warning(content) %}
+  {% import _self as alert %}
+  {{ alert.default(content, {"modifier": "warning"}) }}
+{% endmacro %}
+
+{% macro success(content) %}
+  {% import _self as alert %}
+  {{ alert.default(content, {"modifier": "success"}) }}
+{% endmacro %}

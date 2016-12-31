@@ -1,0 +1,7 @@
+{% macro logo() %}
+<a class="brand" href="{{ site.url|default('/') }}" rel="home" title="{{ site.name }}">
+  <svg class="brand__image">
+    <use xlink:href="/components/brand/floid.svg#brand"></use>
+  </svg>
+</a>
+{% endmacro %}

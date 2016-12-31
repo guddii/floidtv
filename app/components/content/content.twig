@@ -1,0 +1,23 @@
+{% macro default(post) %}
+
+  <div class="content content--{{ post.post_type|default("message") }}">
+
+    {% import '../picture/picture.twig' as picture %}
+
+    <header content="content__head">
+      <h3 content="content__heading">{{ post.title }}</h3>
+    </header>
+
+    <p class="content__body block-with-text">
+      {{ picture.default(post.thumbnail, "foo") }}
+      {{ post.content }}
+    </p>
+
+    <footer class="content__footer">
+      {% if post.author.name %}<a href="{{ post.author.path }}"> {{ post.author.name }} </a><br>{% endif %}
+      {{ post.post_date|date }}
+    </footer>
+
+  </div>
+
+{% endmacro %}

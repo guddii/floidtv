@@ -1,0 +1,7 @@
+{% macro default(item) %}
+  {% import '../icons/icons.twig' as icons %}
+  <a class="link {{ item.classes | join(' ') }} " href="{{ item.get_link|e }}">
+    {% if item.icon %}{{ icons.default(item.icon) }}{% endif %}
+    {{ item.title|e }}
+  </a>
+{% endmacro %}

@@ -1,0 +1,10 @@
+{% macro priamry(menu) %}
+  {% import '../link/link.twig' as link %}
+  <ul class="navigation">
+    {% for item in menu %}
+      <li class="navigation__item">
+        {{ link.default(item) }}
+      </li>
+    {% endfor %}
+  </ul>
+{% endmacro %}

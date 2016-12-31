@@ -1,0 +1,35 @@
+@media screen {
+
+  .page {
+    margin: 0;
+    padding: 0;
+  }
+
+  .page__separator {
+    display: block;
+    clear: both;
+    position: static;
+    height: 1px;
+    margin: 0 auto;
+    color: blue;
+    background: var(--grayDefault);
+  }
+
+  .page__body,
+  .page__footer {
+    padding: 20px;
+  }
+
+  .page__body {
+    padding-bottom: 40px;
+  }
+
+  .page__article {
+    clear: both;
+    padding-bottom: 30px;
+  }
+
+  .page__article + .page__article {
+    border-top: 1px solid var(--grayLight);
+  }
+}
