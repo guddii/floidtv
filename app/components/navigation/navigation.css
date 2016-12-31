@@ -3,12 +3,12 @@
 @media screen {
 
   .navigation,
-  .navigation__list,
   .navigation__item {
     display: inline-block;
   }
 
-  .navigation__list {
+  .navigation {
+    white-space: nowrap;
     list-style: none;
     padding: 0;
     margin: 0;

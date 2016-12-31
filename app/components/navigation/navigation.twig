@@ -1,12 +1,10 @@
-{% macro priamry(config) %}
+{% macro priamry(menu) %}
   {% import '../link/link.twig' as link %}
-  <nav class="navigation">
-    <ul class="navigation__list">
-      {% for entry in config.entries %}
-        <li class="navigation__item">
-          {{ link.default( entry ) }}
-        </li>
-      {% endfor %}
-    </ul>
-  </nav>
+  <ul class="navigation">
+    {% for item in menu %}
+      <li class="navigation__item">
+        {{ link.default(item) }}
+      </li>
+    {% endfor %}
+  </ul>
 {% endmacro %}
