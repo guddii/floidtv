@@ -9,7 +9,7 @@
     <section class="page__content">
       {{ content.default(post) }}
     </section>
-    {% if post.comment_status != 'closed' %}
+    {% if post.comment_status == 'open' %}
       <section class="page__comments">
         {{ comment.default(post.get_comments()) }}
       </section>
