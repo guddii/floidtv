@@ -7,11 +7,13 @@
   }
 
   .masthead__brand {
-    min-width: 60px;
+    padding: 10px 20px;
   }
 
   .masthead__navigation {
     text-align: right;
+    flex-grow: 1;
+    overflow-x: scroll;
   }
 
 }
