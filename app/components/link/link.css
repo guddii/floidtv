@@ -2,15 +2,26 @@
 
   .link {
     display: inline-block;
-    color: #1f1f1f;
+    color: var(--grayDefault);
   }
 
   .link--main {
     padding: 20px 10px;
   }
 
-  .link--main:focus,
-  .link--main:hover {
+  .link--cta {
+    border-left: 1px solid var(--grayDefault);
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .link--footer {
+    color: var(--grayDefault);
+    font-size: 75%;
+  }
+
+  .link:focus,
+  .link:hover {
     opacity: 0.5;
   }
 
