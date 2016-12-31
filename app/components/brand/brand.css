@@ -11,21 +11,9 @@
 
   .brand__image {
     display: inline-block;
-    width: auto;
-    max-width: 135px;
-    fill: #CCC;
-    padding: 10px;
-  }
-
-  .brand__title {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
+    width: 65px;
+    height: 40px;
+    fill: var(--grayDefault);
   }
 
 }
