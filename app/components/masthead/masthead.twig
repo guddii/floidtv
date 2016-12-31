@@ -1,12 +1,20 @@
-{% macro default(menu) %}
+{% macro default(menu, site, title) %}
   {% import '../brand/brand.twig' as brand %}
   {% import '../navigation/navigation.twig' as navigation %}
   <div class="masthead" role="banner">
     <div class="masthead__brand">
+      <h1 class="visible visible--sr">
+        {% if title %}
+          {{ title }} - {{ site.name }}
+        {% else %}
+          {{ site.name }}
+        {% endif %}
+      </h1>
       {{ brand.logo() }}
     </div>
     {% if menu %}
-      <nav class="masthead__navigation" role="navigation">
+      <h2 class="visible visible--sr">Menu</h2>
+      <nav class="masthead__navigation">
         {{ navigation.priamry(menu) }}
       </nav>
     {% endif %}

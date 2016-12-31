@@ -1,28 +1,82 @@
 {
   "front": {
     "title": "Das studentische Fernsehen der HTWK Leipzig",
-    "content": "Inhalt"
+    "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante."
   },
   "page": [
     {
       "id": 1,
-      "title": "Überschrift 1",
-      "content": "Inhalt 1"
-    },
-    {
-      "id": 2,
-      "title": "Überschrift 2",
-      "content": "Inhalt 2"
-    },
-    {
-      "id": 3,
-      "title": "Überschrift 3",
-      "content": "Inhalt 3"
+      "title": "Über uns",
+      "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante."
     },
     {
       "id": 4,
       "title": "Impressum",
-      "content": "Inhalt 4"
+      "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante."
+    }
+  ],
+  "post": [
+    {
+      "id": 1,
+      "title": "Campus Compact KW 48",
+      "content": "Zum ersten Mal fanden sich die Absolventen der Fakultät Medien im Kunstkraftwerk Leipzig zur Graduierung zusammen. Wir waren auch vor Ort und haben uns für Euch einen Eindruck über das gesamte Event verschafft.<br> Aber wie geht es danach weiter? Die Recruiting- und Karrieremesse WiK hilft da weiter! Welche Möglichkeiten sie den Studenten dabei bieten, haben wir für Euch in Erfahrung gebracht.",
+      "category": "kompakt",
+      "post_type": "video",
+      "get_thumbnail": true,
+      "thumbnail": {
+        "src": "http://placehold.it/250x150"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Campus Compact KW 46",
+      "content": "Am 2. November waren wir beim zweiten Tag der Familie an der HTWK Leipzig und haben uns für Euch über Studieren neben dem Alltagsleben mit Familie informiert.<br>Wie finanziere ich mein Studium? Diese und weitere Fragen haben die Veranstalter des Informationstages zum Thema Stipendium am 9. November beantwortet. Die floid-Redaktion war auch vor Ort und hat für Euch ein paar Tipps gesammelt.<br>Das Forschungskonsortium „C³ - Carbon Concrete Composite“ hat auf einer Vernissage seine aktuellen Forschungsergebnisse im Bereich multifunktionelle Acetonbauteile vorgestellt. Wir haben es uns genauer angeschaut.<br>Am 23. November findet die Karrieremesse der HTWK Leipzig statt. Zahlreiche Berater aus verschiedenen Branchen stehen den Besuchern zur Verfügung und beantworten alle Fragen rund um das Thema Karriere. Der Eintritt ist frei. Wir werden auch vor Ort sein und für Euch berichten.",
+      "category": "kompakt",
+      "post_type": "video",
+      "get_thumbnail": true,
+      "thumbnail": {
+        "src": "http://placehold.it/250x150"
+      }
+    },
+    {
+      "id": 3,
+      "title": "phänoMEDIA 2016 Aftermovie",
+      "content": "Zum 10 jährigen Jubiläum der phänoMedia verwandelte die Fakultät Medien am 28.10.2016 den Campus der HTWK Leipzig in einen Rummelplatz. Dem Motto '10 Jahre Medienrummel' wurde die Veranstaltung durch Musik, Tanz, Tombola, Karussells, Clowns, Feuerwerk und viele weitere Attraktionen mehr als gerecht. Tagsüber waren die Besucher eingeladen durch die unterschiedlichsten Workshops die Arbeit und Forschung der Fakultät Medien mitzuerleben. floid selbst hat mit seinem innovativen partizipativen Format \"Hau's Raus!\" den Gästen eine Plattform geboten ihre Meinung eigenständig über ihr Smartphone in unser Programm einfließen zu lassen. Wie das aussieht und weitere Eindrücke der Veranstaltung gibt's in unserem phänoMedia Aftermovie zu sehen.",
+      "category": "shuffle",
+      "post_type": "video",
+      "get_thumbnail": true,
+      "thumbnail": {
+        "src": "http://placehold.it/250x150"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Weihnachten in Leipzig 2016",
+      "content": "HO HO HO, Weihnachten ist überall in Leipzig sichtbar, fühlbar, zu riechenund zu schmecken. Traditionell oder eben anders, folget Eurem innerenStern. floid wünscht allen Zuschauer ein frohes Weihnachtsfest, besinnliche Feiertage und einen guten Rutsch ins neue Jahr!",
+      "category": "shuffle",
+      "post_type": "video",
+      "get_thumbnail": true,
+      "thumbnail": {
+        "src": "http://placehold.it/250x150"
+      }
+    },
+    {
+      "id": 5,
+      "title": "Dein Weihnachtsgruß - BEST OF 2016",
+      "content": "Ihr habt gegrüßt - wir haben gefilmt!Und so haben wir aus Eren Grüßen auch in diesem wieder ein sympathisch-festliches Best Of schneiden können. Vielen Dank an Alle, die mitgemacht haben und viel Spaß beim Verschicken Eurer Grüße.Wir freuen uns auf 2017 - gemeinsam mit Euch! Bis dahin wünschen wir all unseren Zuschauern und Freunden eine besinnliche Weihnachtszeit, einen fleißigen Weihnachtsmann und einen guten Rutsch ins neue Jahr!",
+      "category": "shuffle",
+      "post_type": "shuffle",
+      "get_thumbnail": true,
+      "thumbnail": {
+        "src": "http://placehold.it/250x150"
+      }
+    },
+    {
+      "id": 6,
+      "title": "floid in Weihnachtsstimmung",
+      "content": "Ho ho ho! floid wünscht allen Zuschauern und Freunden eine besinnliche Weihnachtszeit!",
+      "category": "blog",
+      "post_type": "default"
     }
   ]
 }

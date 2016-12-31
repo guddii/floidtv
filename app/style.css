@@ -24,11 +24,13 @@ Tags: floid
 @import url("./generics/box-sizing.css");
 /**
  * BASE
+ * Accessibility........Accessibility styles.
  * Typography...........Default text styles.
  * Elements.............Default Element styles.
  * Forms................Default form styles.
  * Links................Default link styles.
  */
+@import url("./base/accessibility.css");
 @import url("./base/typography.css");
 @import url("./base/elements.css");
 @import url("./base/forms.css");
@@ -52,4 +54,5 @@ Tags: floid
 @import url("./components/masthead/masthead.css");
 @import url("./components/navigation/navigation.css");
 @import url("./components/page/page.css");
+@import url("./components/picture/picture.css");
 

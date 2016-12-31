@@ -24,4 +24,12 @@
     padding-bottom: 40px;
   }
 
+  .page__article {
+    clear: both;
+    padding-bottom: 30px;
+  }
+
+  .page__article + .page__article {
+    border-top: 1px solid var(--grayLight);
+  }
 }

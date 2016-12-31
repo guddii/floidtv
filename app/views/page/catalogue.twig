@@ -1,0 +1,21 @@
+{% extends "../master.twig" %}
+{% import '../../components/content/content.twig' as content %}
+{% import '../../components/comment/comment.twig' as comment %}
+
+{% block content %}
+
+  {% for post in post %}
+    <article class="page__article">
+      <h2 class="visible visible--sr">{{ title|default("Beitrag") }}</h2>
+      <section class="page__content">
+        {{ content.default(post) }}
+      </section>
+      {% if post.comment_status == 'open' %}
+        <section class="page__comments">
+          {{ comment.default(post.get_comments()) }}
+        </section>
+      {% endif %}
+    </article>
+  {% endfor %}
+
+{% endblock %}

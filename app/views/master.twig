@@ -1,11 +1,10 @@
+<!doctype html>
+<html class="no-js" {{ site.language_attributes }}>
 {% import '../components/masthead/masthead.twig' as masthead %}
 {% import '../components/footer/footer.twig' as footer %}
-{% import '../components/footer/footer.twig' as footer %}
-<!doctype html>
-<html class="no-js" {{ site.language_attributes }} version="">
 {% block html_head_container %}
   <head>
-    <meta charset="{{ site.charset }}"/>
+    <meta charset="{{ site.charset|default('utf-8') }}"/>
     <title>
       {% if title %}
         {{ title }} - {{ site.name }}
@@ -14,11 +13,11 @@
       {% endif %}
     </title>
     <meta name="description" content="{{ site.description }}">
-    <link rel="stylesheet" href="{{ site.theme.link }}/style.css" type="text/css" media="screen"/>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{{ site.theme.link }}/style.css" type="text/css" media="screen">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="pingback" href="{{ site.pingback_url }}"/>
+    {% if site.pingback_url %}
+      <link rel="pingback" href="{{ site.pingback_url }}">{% endif %}
     {% if function %}{{ function('wp_head') }}{% endif %}
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="stylesheet" href="/style.css">
@@ -29,12 +28,12 @@
 
 <header class="page__header">
   {% block header %}
-    {{ masthead.default(menu.get_items) }}
+    {{ masthead.default(menu.get_items, site, title) }}
   {% endblock %}
 </header>
 <hr class="page__separator">
 
-<main role="main" class="page__body">
+<main class="page__body">
   {% block content %}
     Sorry, no content
   {% endblock %}
