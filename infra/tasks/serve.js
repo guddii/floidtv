@@ -1,6 +1,8 @@
 import gulp from 'gulp';
 import browserSync from 'browser-sync';
-import dir from './directories';
+import dir from '../shared/directories';
+import middleware from '../shared/middleware';
+import mocks from '../shared/mocks';
 
 gulp.task('styles-watch', ['styles'], (done) => {
   browserSync.reload();
@@ -17,17 +19,17 @@ gulp.task('assets-watch', ['assets'], (done) => {
   done();
 });
 
-gulp.task('templates-watch', ['templates'], (done) => {
-  browserSync.reload();
-  done();
-});
-
 gulp.task('serve', () => {
-  browserSync({
-    reloadThrottle: 5000,
+
+  browserSync.init({
+    open: false,
     server: {
       baseDir: dir.dest
-    }
+    },
+    middleware: [middleware]
+  }, function (err, bs) {
+    let server = mocks();
+    bs.app.use('/mocks', server);
   });
 
   gulp.watch([
@@ -37,12 +39,8 @@ gulp.task('serve', () => {
     '*.js', '**/*.js'
   ], {cwd: dir.src}, ['scripts-watch']);
   gulp.watch([
-    '*.twig', '**/*.twig'
-  ], {cwd: dir.src}, ['templates-watch']);
-  gulp.watch([
     '*', '**/*',
     '!*.css', '!**/*.css',
-    '!*.js', '!**/*.js',
-    '!*.twig', '!**/*.twig'
+    '!*.js', '!**/*.js'
   ], {cwd: dir.src}, ['assets-watch']);
 });

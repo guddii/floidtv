@@ -1,0 +1,28 @@
+{
+  "front": {
+    "title": "Das studentische Fernsehen der HTWK Leipzig",
+    "content": "Inhalt"
+  },
+  "page": [
+    {
+      "id": 1,
+      "title": "Überschrift 1",
+      "content": "Inhalt 1"
+    },
+    {
+      "id": 2,
+      "title": "Überschrift 2",
+      "content": "Inhalt 2"
+    },
+    {
+      "id": 3,
+      "title": "Überschrift 3",
+      "content": "Inhalt 3"
+    },
+    {
+      "id": 4,
+      "title": "Impressum",
+      "content": "Inhalt 4"
+    }
+  ]
+}

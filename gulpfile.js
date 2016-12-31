@@ -2,13 +2,12 @@ import gulp       from 'gulp';
 import loadTasks  from 'require-dir';
 import sequence   from 'run-sequence';
 
-loadTasks('./tasks');
+loadTasks('./infra/tasks');
 
 gulp.task('generate', [
   'assets',
   'scripts',
-  'styles',
-  'templates',
+  'styles'
 ]);
 
 gulp.task('generate-server', [

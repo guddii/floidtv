@@ -1,13 +1,20 @@
-/* eslint no-console: 0 */
-
 import express from 'express';
+import morgan from 'morgan';
+import mocks from './infra/shared/mocks';
+import middleware from './infra/shared/middleware';
+
+// Server configuration
 const app = express();
+const mock = mocks();
+app.set('port', (process.env.PORT || 3000));
+app.use(morgan('tiny'));
 
-app.set('port', (process.env.PORT || 5000));
-
+// Routes
 app.use('/', express.static(__dirname + '/dist'));
+app.get('*', middleware);
+app.use('/mocks', mock);
 
+// Let's go ...
 app.listen(app.get('port'), function listen() {
-  'use strict';
   console.log('Node app is running on port', app.get('port'));
 });

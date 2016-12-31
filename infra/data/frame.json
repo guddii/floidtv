@@ -1,0 +1,26 @@
+{
+  "menu": {
+    "get_items": [
+      {
+        "get_link": "/page/1",
+        "title": "Über uns",
+        "classes": ["link--main"]
+      },
+      {
+        "get_link": "/page/2",
+        "title": "Blog",
+        "classes": ["link--main"]
+      },
+      {
+        "get_link": "/page/3",
+        "title": "Sendungen",
+        "icon": "video-camera",
+        "classes": ["link--main", "link--cta"]
+      }
+    ]
+  },
+  "site": {
+    "name": "Floidtv",
+    "charset": "utf-8"
+  }
+}

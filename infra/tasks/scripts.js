@@ -7,7 +7,9 @@ import gutil        from 'gulp-util';
 import uglify       from 'gulp-uglify';
 import sourcemaps   from 'gulp-sourcemaps';
 
-import dir from './directories';
+import sequence   from 'run-sequence';
+
+import dir from '../shared/directories';
 
 gulp.task('scripts-transpile', () => {
   gulp.src([dir.src + '/*.js', dir.src + '/**/*.js'])
@@ -35,4 +37,6 @@ gulp.task('scripts-bundle', () => {
     .pipe(gulp.dest('./'));
 });
 
-gulp.task('scripts', ['scripts-transpile', 'scripts-bundle']);
+gulp.task('scripts', (done) =>
+  sequence('scripts-transpile', 'scripts-bundle', done)
+);

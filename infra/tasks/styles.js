@@ -3,7 +3,7 @@ import postcss from 'gulp-postcss';
 import cssnext from 'postcss-cssnext';
 import sourcemaps from 'gulp-sourcemaps';
 import atImport from 'postcss-import';
-import dir from './directories';
+import dir from '../shared/directories';
 
 gulp.task('styles', () => {
   const processors = [
