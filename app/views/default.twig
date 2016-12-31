@@ -1,0 +1,19 @@
+{% extends "master.twig" %}
+{% import '../components/content/content.twig' as content %}
+{% import '../components/comment/comment.twig' as comment %}
+
+{% block content %}
+
+  <article class="page__article">
+    {% if title %}<h1>{{ title }}</h1>{% endif %}
+    <section class="page__content">
+      {{ content.default(post) }}
+    </section>
+    {% if post.comment_status != 'closed' %}
+      <section class="page__comments">
+        {{ comment.default(post.get_comments()) }}
+      </section>
+    {% endif %}
+  </article>
+
+{% endblock %}

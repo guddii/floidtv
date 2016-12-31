@@ -1,49 +1,57 @@
 {% import '../components/masthead/masthead.twig' as masthead %}
 {% import '../components/footer/footer.twig' as footer %}
+{% import '../components/footer/footer.twig' as footer %}
 <!doctype html>
-<html class="no-js" lang="de">
-<head>
-  {% block head %}
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>{% block title %}{{ title }}{% endblock %} | Floid </title>
-    <meta name="description" content="{% block description %}{{ description }}{% endblock %}">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<html class="no-js" {{ site.language_attributes }} version="">
+{% block html_head_container %}
+  <head>
+    <meta charset="{{ site.charset }}"/>
+    <title>
+      {% if title %}
+        {{ title }} - {{ site.name }}
+      {% else %}
+        {{ site.name }}
+      {% endif %}
+    </title>
+    <meta name="description" content="{{ site.description }}">
+    <link rel="stylesheet" href="{{ site.theme.link }}/style.css" type="text/css" media="screen"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="pingback" href="{{ site.pingback_url }}"/>
+    {% if function %}{{ function('wp_head') }}{% endif %}
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
     <link rel="stylesheet" href="/style.css">
-  {% endblock %}
-</head>
-<body class="page">
+    {% block head %}{% endblock %}
+  </head>
+{% endblock %}
+<body class="page {{ body_class }}">
+
 <header class="page__header">
-
-
   {% block header %}
-    {{ masthead.default(links) }}
+    {{ masthead.default(menu.get_items) }}
   {% endblock %}
-
 </header>
 <hr class="page__separator">
 
-<main class="page__body">
-
-  {% block main %}
-
-    <!-- Main -->
-
+<main role="main" class="page__body">
+  {% block content %}
+    Sorry, no content
   {% endblock %}
-
+  {% if sidebar %}
+    <aside class="page__sidebar">
+      {{ sidebar }}
+    </aside>
+  {% endif %}
 </main>
 
 <hr class="page__separator">
-<footer class="page__footer">
-
-  {% block footer %}
+{% block footer %}
+  <footer class="page__footer">
     {{ footer.default() }}
-  {% endblock %}
-
-</footer>
+  </footer>
+  {% if function %}{{ function('wp_footer') }}{% endif %}
+{% endblock %}
 
 <script src="/main.js"></script>
 </body>

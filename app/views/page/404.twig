@@ -1,0 +1,13 @@
+{% extends "../master.twig" %}
+{% import '../../components/alert/alert.twig' as alert %}
+
+
+{% block content %}
+  {{ alert.warning({
+    "title": "Diese Seite konnte nicht gefunden werden.",
+    "texts": [
+    "Gründe dafür könnten sein, dass Sie eine falsche oder veraltete URL aufgerufen haben – bitte überprüfen Sie diese noch einmal. Oder aber wir haben die betreffende Seite archiviert, verschoben oder umbenannt.",
+    "Vielleicht können Sie den von Ihnen gewünschten Inhalt über unsere Startseite finden."
+    ]
+  }) }}
+{% endblock %}

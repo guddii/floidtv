@@ -10,8 +10,46 @@ License URI: https://github.com/guddii/floidtv/blob/master/LICENSE
 Text Domain: floid
 Tags: floid
 */
-
+/**
+ * SETTINGS
+ * Global...............Globally-available variables and config.
+ */
+@import url("./settings/global.css");
+/*
+ * GENERIC
+ * Normalize.css........A level playing field.
+ * Box-sizing...........Better default `box-sizing`.
+ */
+@import url("./libs/normalize-css/normalize.css");
+@import url("./generics/box-sizing.css");
+/**
+ * BASE
+ * Typography...........Default text styles.
+ * Elements.............Default Element styles.
+ * Forms................Default form styles.
+ * Links................Default link styles.
+ */
+@import url("./base/typography.css");
+@import url("./base/elements.css");
+@import url("./base/forms.css");
+@import url("./base/links.css");
+/**
+ * COMPONENTS
+ * alert................User feedback as alert.
+ * brand................The page brand.
+ * footer...............The main page footer.
+ * content..............A module to display the content.
+ * icon.................Icon mapping to fonts awesome
+ * masthead.............The main page header.
+ * navigation...........The page navigation.
+ * page.................Page sections.
+ */
+@import url("./components/alert/alert.css");
 @import url("./components/brand/brand.css");
+@import url("./components/content/content.css");
+@import url("./components/footer/footer.css");
+@import url("./components/icon/icon.css");
 @import url("./components/masthead/masthead.css");
 @import url("./components/navigation/navigation.css");
 @import url("./components/page/page.css");
+
