@@ -7,12 +7,12 @@
         "classes": ["link--main"]
       },
       {
-        "get_link": "/catalogue/default/blog",
+        "get_link": "/catalogue/default/blog/",
         "title": "Blog",
         "classes": ["link--main"]
       },
       {
-        "get_link": "/catalogue/video",
+        "get_link": "/catalogue/video/",
         "title": "Sendungen",
         "icon": "video-camera",
         "classes": ["link--main", "link--cta"]

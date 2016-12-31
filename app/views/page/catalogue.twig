@@ -4,6 +4,23 @@
 
 {% block content %}
 
+
+  {% set newArray = [] %}
+  {% for name in post %}
+    {% if name.category not in newArray %}
+      {% set newArray = newArray|merge([name.category]) %}
+    {% endif %}
+  {% endfor %}
+
+  {% if newArray|length > 1 %}
+    <h2>Filter</h2>
+    <ul>
+      {% for category in newArray %}
+        <li><a href="./{{ category }}">{{ category }}</a></li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
   {% for post in post %}
     <article class="page__article">
       <h2 class="visible visible--sr">{{ title|default("Beitrag") }}</h2>
