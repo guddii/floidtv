@@ -29,7 +29,7 @@ gulp.task('serve', () => {
     middleware: [middleware]
   }, function (err, bs) {
     let server = mocks();
-    bs.app.use('/mocks', server);
+    bs.app.use('/api', server);
   });
 
   gulp.watch([

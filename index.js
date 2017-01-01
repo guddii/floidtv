@@ -12,7 +12,7 @@ app.use(morgan('tiny'));
 // Routes
 app.use('/', express.static(__dirname + '/dist'));
 app.get('*', middleware);
-app.use('/mocks', mock);
+app.use('/api', mock);
 
 // Let's go ...
 app.listen(app.get('port'), function listen() {
