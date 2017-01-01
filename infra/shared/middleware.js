@@ -7,21 +7,20 @@ import fs from 'fs';
 export default function (req, res, next) {
 
   const options = {
-    url: 'http://localhost:' + (process.env.PORT || 3000) + '/mocks'
+    url: 'http://localhost:' + (process.env.PORT || 3000) + '/api'
   };
 
   let parsed = url.parse(req.url);
   let pathname = parsed.pathname;
   let file;
-  let obj = JSON.parse(fs.readFileSync('infra/data/frame.json', 'utf8'));
 
-  if (!pathname.match(/mocks/) && !pathname.match(/\.(.*)$/)) {
+  if (!pathname.match(/api/) && !pathname.match(/\.(.*)$/)) {
 
     let data = parsed.path;
 
     if (parsed.pathname === '/') {
       file = 'front';
-      data = '/front';
+      data = '/front/';
     } else {
       file = pathname.split('/')[1];
     }
@@ -43,12 +42,10 @@ export default function (req, res, next) {
         template = 'dist/views/page/404.twig';
       }
 
-      let copy = Object.assign({post: JSON.parse(body)}, obj);
-
       twig.cache(false);
       twig.renderFile(
         template,
-        copy,
+        JSON.parse(body),
         (err, html) => {
           res.end(html);
         }

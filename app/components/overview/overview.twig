@@ -1,0 +1,10 @@
+{% macro default(post) %}
+  {% import '../picture/picture.twig' as picture %}
+  <ul class="overview">
+    {% for entry in post %}
+      <li class="overview__item">
+        <img src="{{ entry.thumbnail.src }}" alt="">
+      </li>
+    {% endfor %}
+  </ul>
+{% endmacro %}

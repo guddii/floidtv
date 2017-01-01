@@ -1,15 +1,15 @@
 {% macro default(post) %}
 
-  <div class="content content--{{ post.post_type|default("message") }}">
+  {% import '../picture/picture.twig' as picture %}
 
-    {% import '../picture/picture.twig' as picture %}
+  <div class="content content--{{ post.post_type|default("message") }}">
 
     <header content="content__head">
       <h3 content="content__heading">{{ post.title }}</h3>
     </header>
 
-    <p class="content__body block-with-text">
-      {{ picture.default(post.thumbnail, "foo") }}
+    <p class="content__body">
+      {{ picture.default(post.thumbnail, "Alt") }}
       {{ post.content }}
     </p>
 
