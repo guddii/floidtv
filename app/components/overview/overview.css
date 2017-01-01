@@ -1,0 +1,23 @@
+@media screen {
+
+  .overview {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit--overflow-scrolling: touch;
+    scroll-snap-type: mandatory;
+    scroll-snap-destination: 100% 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+  }
+
+  .overview__item {
+    position: relative;
+    display: inline-block;
+    -webkit-scroll-snap-coordinate: 100% 100%;
+    scroll-snap-coordinate: 100% 100%;
+  }
+
+}

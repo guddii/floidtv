@@ -25,6 +25,7 @@
   }
 
   .page__article {
+    display: block;
     clear: both;
     padding-bottom: 30px;
   }
@@ -32,4 +33,5 @@
   .page__article + .page__article {
     border-top: 1px solid var(--grayLight);
   }
+
 }

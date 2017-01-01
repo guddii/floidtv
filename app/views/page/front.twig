@@ -1,1 +1,9 @@
 {% extends "../default.twig" %}
+{% import '../../components/overview/overview.twig' as overview %}
+
+{% block content %}
+
+  {{ page.article(post[0], title) }}
+  {{ overview.default(post) }}
+
+{% endblock %}

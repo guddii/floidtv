@@ -42,6 +42,7 @@ Tags: floid
  * footer...............The main page footer.
  * content..............A module to display the content.
  * icon.................Icon mapping to fonts awesome
+ * overview.............A overview view for mass data
  * masthead.............The main page header.
  * navigation...........The page navigation.
  * page.................Page sections.
@@ -53,6 +54,7 @@ Tags: floid
 @import url("./components/icons/icons.css");
 @import url("./components/masthead/masthead.css");
 @import url("./components/navigation/navigation.css");
+@import url("./components/overview/overview.css");
 @import url("./components/page/page.css");
 @import url("./components/picture/picture.css");
 
