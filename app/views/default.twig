@@ -4,9 +4,11 @@
 {% block content %}
 
   {% if post is iterable %}
+
     {% for entry in post %}
       {{ page.article(entry, title) }}
     {% endfor %}
+
   {% endif %}
 
 {% endblock %}
