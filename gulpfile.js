@@ -1,6 +1,6 @@
-import gulp       from 'gulp';
-import loadTasks  from 'require-dir';
-import sequence   from 'run-sequence';
+import gulp from 'gulp';
+import loadTasks from 'require-dir';
+import sequence from 'run-sequence';
 
 loadTasks('./infra/tasks');
 
