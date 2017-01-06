@@ -1,33 +1,33 @@
 {
-    "parserOptions": {
-       "sourceType": "module"
-    },
-    "ecmaFeatures": {
-       "modules": true
-    },
-    "rules": {
-        "no-console": "off",
-        "indent": [ "warn", 4 ],
-        "linebreak-style": "off",
-        "semi": [ "error","always" ],
-        "no-unused-vars": "warn",
-        "strict": [ "error", "function" ],
-        "default-case": "error",
-        "no-alert": ["warn"],
-        "no-duplicate-imports": "warn",
-        "require-jsdoc": "warn",
-        "no-mixed-spaces-and-tabs": "warn"
-    },
-    "globals": {
-        "jeans": false // disallow overwriting
-    },
-    "env": {
-        "es6": true,
-        "browser": true,
-        "node": true
-    },
-    "extends": [
-        "eslint:recommended"
-    ]
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "ecmaFeatures": {
+    "modules": true
+  },
+  "rules": {
+    "no-console": "off",
+    "indent": [ "warn", 4 ],
+    "linebreak-style": "off",
+    "semi": [ "error","always" ],
+    "no-unused-vars": "warn",
+    "strict": [ "error", "function" ],
+    "default-case": "error",
+    "no-alert": ["warn"],
+    "no-duplicate-imports": "warn",
+    "require-jsdoc": "warn",
+    "no-mixed-spaces-and-tabs": "warn"
+  },
+  "globals": {
+    "jeans": false // disallow overwriting
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended"
+  ]
 }
 // see further rules: http://eslint.org/docs/rules/
