@@ -13,7 +13,8 @@ Installing this project locally, requires following steps in your terminal:
 ```
 git clone https://github.com/guddii/floidtv.git
 cd floidtv  
-npm install  
+npm install
+bower install
 ```
 ### Build commands
 
