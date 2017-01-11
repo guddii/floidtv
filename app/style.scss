@@ -14,14 +14,14 @@ Tags: floid
  * SETTINGS
  * Global...............Globally-available variables and config.
  */
-@import './settings/global';
+@import "./settings/global";
 /*
  * GENERIC
  * Normalize.css........A level playing field.
  * Box-sizing...........Better default `box-sizing`.
  */
-@import './libs/normalize-css/normalize';
-@import './generics/box-sizing';
+@import "./libs/normalize-css/normalize";
+@import "./generics/box-sizing";
 /**
  * BASE
  * Accessibility........Accessibility styles.
@@ -30,11 +30,11 @@ Tags: floid
  * Forms................Default form styles.
  * Links................Default link styles.
  */
-@import './base/accessibility';
-@import './base/typography';
-@import './base/elements';
-@import './base/forms';
-@import './base/links';
+@import "./base/accessibility";
+@import "./base/typography";
+@import "./base/elements";
+@import "./base/forms";
+@import "./base/links";
 /**
  * COMPONENTS
  * alert................User feedback as alert.
@@ -47,14 +47,14 @@ Tags: floid
  * navigation...........The page navigation.
  * page.................Page sections.
  */
-@import './components/alert/alert';
-@import './components/brand/brand';
-@import './components/content/content';
-@import './components/footer/footer';
-@import './components/icons/icons';
-@import './components/masthead/masthead';
-@import './components/navigation/navigation';
-@import './components/overview/overview';
-@import './components/page/page';
-@import './components/picture/picture';
+@import "./components/alert/alert";
+@import "./components/brand/brand";
+@import "./components/content/content";
+@import "./components/footer/footer";
+@import "./components/icons/icons";
+@import "./components/masthead/masthead";
+@import "./components/navigation/navigation";
+@import "./components/overview/overview";
+@import "./components/page/page";
+@import "./components/picture/picture";
 
