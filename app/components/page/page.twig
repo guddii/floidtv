@@ -1,10 +1,6 @@
 {% macro article(post, title) %}
   {% import '../content/content.twig' as content %}
   {% import '../comment/comment.twig' as comment %}
-
-  {{ post.id }}
-
-
   <article class="page__article">
     <h2 class="visible visible--sr">{{ title|default("Beitrag") }}</h2>
     <section class="page__content">
