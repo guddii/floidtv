@@ -1,3 +1,5 @@
+import 'babel-polyfill';
+
 import gulp       from 'gulp';
 import loadTasks  from 'require-dir';
 import sequence   from 'run-sequence';
@@ -10,10 +12,9 @@ gulp.task('generate', [
   'styles'
 ]);
 
-gulp.task('generate-server', [
-  'generate',
-  'serve'
-]);
+gulp.task('generate-server', (done) =>
+  sequence('clean', 'generate', 'serve', done)
+);
 
 gulp.task('build', (done) =>
   sequence('clean', 'generate', done)
