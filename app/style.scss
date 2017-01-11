@@ -14,14 +14,14 @@ Tags: floid
  * SETTINGS
  * Global...............Globally-available variables and config.
  */
-@import url("./settings/global.css");
+@import "./settings/global";
 /*
  * GENERIC
  * Normalize.css........A level playing field.
  * Box-sizing...........Better default `box-sizing`.
  */
-@import url("./libs/normalize-css/normalize.css");
-@import url("./generics/box-sizing.css");
+@import "./libs/normalize-css/normalize";
+@import "./generics/box-sizing";
 /**
  * BASE
  * Accessibility........Accessibility styles.
@@ -30,11 +30,11 @@ Tags: floid
  * Forms................Default form styles.
  * Links................Default link styles.
  */
-@import url("./base/accessibility.css");
-@import url("./base/typography.css");
-@import url("./base/elements.css");
-@import url("./base/forms.css");
-@import url("./base/links.css");
+@import "./base/accessibility";
+@import "./base/typography";
+@import "./base/elements";
+@import "./base/forms";
+@import "./base/links";
 /**
  * COMPONENTS
  * alert................User feedback as alert.
@@ -47,14 +47,14 @@ Tags: floid
  * navigation...........The page navigation.
  * page.................Page sections.
  */
-@import url("./components/alert/alert.css");
-@import url("./components/brand/brand.css");
-@import url("./components/content/content.css");
-@import url("./components/footer/footer.css");
-@import url("./components/icons/icons.css");
-@import url("./components/masthead/masthead.css");
-@import url("./components/navigation/navigation.css");
-@import url("./components/overview/overview.css");
-@import url("./components/page/page.css");
-@import url("./components/picture/picture.css");
+@import "./components/alert/alert";
+@import "./components/brand/brand";
+@import "./components/content/content";
+@import "./components/footer/footer";
+@import "./components/icons/icons";
+@import "./components/masthead/masthead";
+@import "./components/navigation/navigation";
+@import "./components/overview/overview";
+@import "./components/page/page";
+@import "./components/picture/picture";
 

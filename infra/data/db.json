@@ -24,7 +24,7 @@
       "post_type": "video",
       "get_thumbnail": true,
       "thumbnail": {
-        "src": "http://placehold.it/250x150"
+        "src": "//placehold.it/250x150"
       }
     },
     {
@@ -35,7 +35,7 @@
       "post_type": "video",
       "get_thumbnail": true,
       "thumbnail": {
-        "src": "http://placehold.it/250x150"
+        "src": "//placehold.it/250x150"
       }
     },
     {
@@ -46,7 +46,7 @@
       "post_type": "video",
       "get_thumbnail": true,
       "thumbnail": {
-        "src": "http://placehold.it/250x150"
+        "src": "//placehold.it/250x150"
       }
     },
     {
@@ -57,7 +57,7 @@
       "post_type": "video",
       "get_thumbnail": true,
       "thumbnail": {
-        "src": "http://placehold.it/250x150"
+        "src": "//placehold.it/250x150"
       }
     },
     {
@@ -68,7 +68,7 @@
       "post_type": "shuffle",
       "get_thumbnail": true,
       "thumbnail": {
-        "src": "http://placehold.it/250x150"
+        "src": "//placehold.it/250x150"
       }
     },
     {
