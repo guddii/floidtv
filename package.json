@@ -8,6 +8,7 @@
     "npm": "3.7.3"
   },
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
     "build": "bower install && gulp build && babel-node index.js",
     "start": "bower install && gulp generate-server"
   },
