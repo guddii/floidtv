@@ -37,7 +37,7 @@ gulp.task('serve', () => {
   });
 
   gulp.watch([
-    '*.css', '**/*.css'
+    '*.css', '**/*.scss'
   ], {cwd: dir.src}, ['styles-watch']);
 
   gulp.watch([
@@ -46,7 +46,7 @@ gulp.task('serve', () => {
 
   gulp.watch([
     '*', '**/*',
-    '!*.css', '!**/*.css',
+    '!*.css', '!**/*.scss',
     '!*.js', '!**/*.js'
   ], {cwd: dir.src}, ['assets-watch']);
 
