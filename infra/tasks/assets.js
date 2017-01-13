@@ -6,6 +6,8 @@ gulp.task('assets', () =>
     [
       dir.src + '/*.*',
       dir.src + '/**/*.*',
+      '!' + dir.src + '/*.js',
+      '!' + dir.src + '/**/*.js',
       '!' + dir.src + '/*.scss',
       '!' + dir.src + '/**/*.scss'
     ]
