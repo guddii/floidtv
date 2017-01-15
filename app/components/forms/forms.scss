@@ -7,27 +7,15 @@
 .forms__prepend,
 .forms_append {
   position: absolute;
-  bottom: .4rem;
+  bottom: .325rem;
 }
 
 .forms__prepend {
-  left: .4rem;
+  left: .325rem;
 }
 
 .forms_append {
-  right: .4rem;
-}
-
-input.forms__text {
-  display: block;
-
-  width: 100%;
-  padding: 11px 42px 10px 10px;
-
-  color: #fff;
-  border-radius: 5px;
-  background: 0 0;
-  background: #1d1d1d;
+  right: .325rem;
 }
 
 .forms__text::-webkit-input-placeholder {
@@ -47,26 +35,29 @@ input.forms__text {
 }
 
 .forms__text {
-  font: inherit;
-  font-size: 12px;
-  line-height: 1.313rem;
+  font-size: 1.2rem;
+
+  display: block;
 
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  width: 100%;
+  height: 34px;
   margin: 0;
-  padding: 0 .563rem;
+  padding: 10px 42px 10px 10px;
 
   vertical-align: top;
   letter-spacing: 0;
 
-  color: #c6c8c8;
+  color: #fff;
   border: 1px solid #323434;
   border-radius: 4px;
   outline: none;
-  background: 0 0;
-  background-color: #444646;
+  background: #1d1d1d;
   background-clip: padding-box;
   box-shadow: inset 0 1px 0 rgba(0, 0, 0, .05);
+
+  appearance: none;
 }
 
 .forms__text:disabled {
