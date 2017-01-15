@@ -75,34 +75,3 @@
 .button--icon {
   padding: 0.5rem 0.65rem;
 }
-
-.input {
-  display: block;
-  position: relative;
-  margin: 1rem;
-}
-
-.input__prepend,
-.input_append {
-  position: absolute;
-  top: 0.625rem;
-}
-
-.input__prepend {
-  left: 0.625rem;
-}
-
-.input_append {
-  right: 0.625rem;
-}
-
-.input__body > input {
-  padding: 10px;
-  background: none;
-  appearance: none;
-  color: white;
-  background: #333;
-  display: block;
-  width: 100%;
-  border-radius: 5px;
-}
