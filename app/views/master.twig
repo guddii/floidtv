@@ -37,11 +37,10 @@
   {% block content %}
     Sorry, no content
   {% endblock %}
-  {% if sidebar %}
-    <aside class="page__sidebar">
-      {{ sidebar }}
-    </aside>
-  {% endif %}
+  <aside class="page__sidebar">
+    {% block aside %}
+    {% endblock %}
+  </aside>
 </main>
 
 <hr class="page__separator">

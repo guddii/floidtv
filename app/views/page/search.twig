@@ -1,1 +1,15 @@
 {% extends "../default.twig" %}
+{% import '../../components/headline/headline.twig' as headline %}
+{% import '../../components/overview/overview.twig' as overview %}
+{% import '../../components/button/button.twig' as button %}
+
+{% block content %}
+
+  <section class="section">
+    <div class="section__content">
+      {{ headline.archive() }}
+      {{ parent() }}
+    </div>
+  </section>
+
+{% endblock %}
