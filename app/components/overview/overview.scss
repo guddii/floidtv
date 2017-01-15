@@ -3,19 +3,29 @@
   .overview {
     overflow-x: auto;
     overflow-y: hidden;
-    white-space: nowrap;
-    -webkit--overflow-scrolling: touch;
-    scroll-snap-type: mandatory;
-    scroll-snap-destination: 100% 100%;
+
     margin: 0;
-    padding: 0;
+    padding: 0 10px 5px 5px;
+
     list-style: none;
 
+    white-space: nowrap;
+
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+    scroll-snap-type: mandatory;
+    scroll-snap-destination: 260px 100%;
+    touch-action: pan-x;
   }
 
   .overview__item {
     position: relative;
+
     display: inline-block;
+
+    width: 260px;
+    padding: 5px;
+
     -webkit-scroll-snap-coordinate: 100% 100%;
     scroll-snap-coordinate: 100% 100%;
   }

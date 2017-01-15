@@ -1,7 +1,11 @@
+.content {
+  color: var(--grayDefault);
+}
+
 .content__video {
   max-width: 100%;
 }
 
-.content__footer{
-  color: var(--grayDefault);
+.content__footer {
+  opacity: 0.25;
 }

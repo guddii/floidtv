@@ -1,14 +1,23 @@
 {% extends "../default.twig" %}
+{% import '../../components/stage/stage.twig' as stage %}
 {% import '../../components/overview/overview.twig' as overview %}
+{% import '../../components/button/button.twig' as button %}
+{% import '../../components/headline/headline.twig' as headline %}
 
 {% block content %}
 
-  {{ page.article(post[0], title) }}
-  {{ overview.default(post) }}
+  {{ stage.default() }}
+  {{ button.cta() }}
 
-  <form action="/search" method="get">
-    <input type="search" name="q">
-    <input type="submit" value="Submit">
-  </form>
+{% endblock %}
+
+{% block aside %}
+
+  <section class="section">
+    <div class="section__content">
+      {{ headline.archive() }}
+    </div>
+  </section>
+  {{ overview.default() }}
 
 {% endblock %}

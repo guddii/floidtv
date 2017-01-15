@@ -3,6 +3,7 @@
   .page {
     margin: 0;
     padding: 0;
+    background: #2a2a2a;
   }
 
   .page__separator {
@@ -12,15 +13,16 @@
     height: 1px;
     margin: 0 auto;
     color: blue;
-    background: var(--grayDefault);
+    border-bottom: 1px solid #333;
+    background: #1c1c1c;
   }
 
-  .page__body,
   .page__footer {
     padding: 20px;
   }
 
   .page__body {
+    padding-top: 30px;
     padding-bottom: 40px;
   }
 

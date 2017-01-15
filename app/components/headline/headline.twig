@@ -1,0 +1,18 @@
+{% macro archive() %}
+  {% import '../forms/forms.twig' as forms %}
+  <div class="headline">
+    <div class="headline__head">
+      <div class="headline__left">
+        <h3 class="headline__heading">Video Archiv</h3>
+        <p class="headline__paragraph">In der Vorschau unseres Archivs findest du die zuletzt veröffentlichten
+          Beiträge. Sie sind nach Rubriken unterteilt, damit du Sie schneller finden kannst.</p>
+      </div>
+      <div class="headline__right">
+        {{ forms.quick_search() }}
+      </div>
+    </div>
+    <div class="headline__body">
+      <h3 class="headline__text">Campus Compact</h3>
+    </div>
+  </div>
+{% endmacro %}

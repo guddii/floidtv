@@ -1,3 +1,22 @@
-{% macro input(name, value, type, size) %}
-  <input type="{{ type|default('text') }}" name="{{ name }}" value="{{ value|e }}" size="{{ size|default(20) }}" />
+{% macro input(name, value, type, size, placeholder, label) %}
+  <label class="forms__label" for="{{ name }}">{{ label }}</label>
+  <input class="forms__text" placeholder="{{ placeholder }}" type="{{ type|default('text') }}" name="{{ name }}"
+         value="{{ value|e }}"
+         size="{{ size|default(20) }}"/>
+{% endmacro %}
+
+{% macro quick_search() %}
+  {% import _self as forms %}
+  {% import '../button/button.twig' as button %}
+  <form class="forms" action="/search" method="get">
+    <div class="forms__item">
+      <div class="forms__body">
+        {{ forms.input('q', '', 'search', '', 'Archiv durchsuchen', '<strong class="forms__strong">Finden:</strong> Bist
+        du auf der Suche nach einem bestimmten Beitrag? Dann durchsuch unser Archiv.</label>' ) }}
+      </div>
+      <div class="forms_append">
+        {{ button.default() }}
+      </div>
+    </div>
+  </form>
 {% endmacro %}

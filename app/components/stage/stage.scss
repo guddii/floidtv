@@ -1,19 +1,13 @@
 @media screen {
 
   .stage {
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
-    margin: auto;
-    font-size: 0;
-    width: 100%;
-    scroll-snap-type: mandatory;
-    scroll-snap-points-x: repeat(350px);
+    display: flex;
+    padding: 0 30px 30px 30px;
+    justify-content: center;
   }
 
-  .stage_image {
-    width: 560px;
-    /* height: 315px; */
+  .stage__image {
+    border-radius: 5px;
   }
 
 }
