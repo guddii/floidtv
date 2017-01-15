@@ -6,4 +6,9 @@
   {{ page.article(post[0], title) }}
   {{ overview.default(post) }}
 
+  <form action="/search" method="get">
+    <input type="search" name="q">
+    <input type="submit" value="Submit">
+  </form>
+
 {% endblock %}

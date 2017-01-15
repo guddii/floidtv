@@ -18,7 +18,8 @@ export default function () {
   server.use(jsonServer.rewriter({
     '/front/': '/post?post_type=video&post_type=testimonial',
     '/catalogue/:type/': '/post?post_type=:type',
-    '/catalogue/:type/:category': '/post?post_type=:type&category=:category'
+    '/catalogue/:type/:category': '/post?post_type=:type&category=:category',
+    '/search': '/post'
   }));
 
   server.use(router);
