@@ -3,6 +3,7 @@
 {% import '../../components/overview/overview.twig' as overview %}
 {% import '../../components/button/button.twig' as button %}
 {% import '../../components/headline/headline.twig' as headline %}
+{% import '../../components/avatar/avatar.twig' as avatar %}
 
 {% block content %}
 
@@ -17,7 +18,25 @@
     <div class="section__content">
       {{ headline.archive() }}
     </div>
-  </section>
+
   {{ overview.default() }}
+   </section>
+
+  <section class="section">
+    <div class="section__content">
+      {{ headline.archive() }}
+
+      <div class="meta">
+        <div class="meta__left">
+          {{ avatar.default() }}
+        </div>
+        <div class="meta__right">
+          {{ avatar.default() }}
+      </div>
+
+
+    </div>
+    </div>
+  </section>
 
 {% endblock %}
