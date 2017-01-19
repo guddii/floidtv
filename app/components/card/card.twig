@@ -1,0 +1,11 @@
+{% macro default() %}
+{% import '../button/button.twig' as button %}
+
+  <li class="card">
+    <img class="card__thumb" src="//fillmurray.com/250/100">
+    <h3 class="card__title">Campus Compact KW 46</h3>
+    <p class="card__excerpt">Edith und Pepe nehmen euch mit zu ihrem liebsten Platz in Leipzig - in der neuen Ausgabe: Mein Lieblingsort.</p>
+    {{ button.default() }}
+  </li>
+
+{% endmacro %}
