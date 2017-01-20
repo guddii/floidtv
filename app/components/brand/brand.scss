@@ -1,8 +1,8 @@
 @media screen {
   .brand {
-    display: block;
-
     padding: 0 10px;
+    display: flex;
+    align-items: center;
   }
 
   .brand:focus,
@@ -23,10 +23,30 @@
 
     fill: var(--brandPrimary);
   }
+
+  .brand__slogan {
+    display: inline-block;
+    color: var(--grayLight);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 4px 0 0 10px;
+  }
+
+  .brand:focus .brand__slogan,
+  .brand:hover .brand__slogan {
+    color: var(--grayDefault);
+  }
+
 }
 
 @media print {
   .brand__image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .brand__slogan {
     display: none;
   }
 }

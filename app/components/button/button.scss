@@ -64,7 +64,7 @@
 }
 
 .button--cta:hover {
-  background-color: color(var(--brandPrimary) blackness(-10%));
+  background-color: color(var(--brandPrimaryDark) blackness(-10%));
 }
 
 .button--cta:active {
@@ -74,4 +74,8 @@
 
 .button--icon {
   padding: 0.5rem 0.65rem;
+}
+
+.button--cta {
+  background-color: (var(--brandPrimary))
 }
