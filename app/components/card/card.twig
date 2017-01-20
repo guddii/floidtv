@@ -3,12 +3,16 @@
 {% import '../rating/rating.twig' as rating %}
 
   <li class="card">
-    <img class="card__thumb" src="//fillmurray.com/250/100">
+    <img class="card__thumb" src="//lorempixel.com/240/120">
     <h3 class="card__title">Campus Compact KW 46</h3>
     <p class="card__excerpt">Edith und Pepe nehmen euch mit zu ihrem liebsten Platz in Leipzig - in der neuen Ausgabe: Mein Lieblingsort.</p>
-    {{ rating.default() }}
+    <div class="card__action">
+      <div class="card__rating">
+        {{ rating.default() }}
+      </div>
 
-    {{ button.default() }}
+      {{ button.default() }}
+    </div>
   </li>
 
 {% endmacro %}
