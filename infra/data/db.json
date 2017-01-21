@@ -25,6 +25,9 @@
       "get_thumbnail": true,
       "thumbnail": {
         "src": "//placehold.it/250x150"
+      },
+      "large": {
+        "src": "//placehold.it/650x450"
       }
     },
     {
@@ -36,6 +39,9 @@
       "get_thumbnail": true,
       "thumbnail": {
         "src": "//placehold.it/250x150"
+      },
+      "large": {
+        "src": "//placehold.it/650x450"
       }
     },
     {
@@ -47,6 +53,9 @@
       "get_thumbnail": true,
       "thumbnail": {
         "src": "//placehold.it/250x150"
+      },
+      "large": {
+        "src": "//placehold.it/650x450"
       }
     },
     {
@@ -58,6 +67,9 @@
       "get_thumbnail": true,
       "thumbnail": {
         "src": "//placehold.it/250x150"
+      },
+      "large": {
+        "src": "//placehold.it/650x450"
       }
     },
     {
@@ -65,10 +77,13 @@
       "title": "Dein Weihnachtsgruß - BEST OF 2016",
       "content": "Ihr habt gegrüßt - wir haben gefilmt!Und so haben wir aus Eren Grüßen auch in diesem wieder ein sympathisch-festliches Best Of schneiden können. Vielen Dank an Alle, die mitgemacht haben und viel Spaß beim Verschicken Eurer Grüße.Wir freuen uns auf 2017 - gemeinsam mit Euch! Bis dahin wünschen wir all unseren Zuschauern und Freunden eine besinnliche Weihnachtszeit, einen fleißigen Weihnachtsmann und einen guten Rutsch ins neue Jahr!",
       "category": "shuffle",
-      "post_type": "shuffle",
+      "post_type": "text",
       "get_thumbnail": true,
       "thumbnail": {
         "src": "//placehold.it/250x150"
+      },
+      "large": {
+        "src": "//placehold.it/650x450"
       }
     },
     {
@@ -76,7 +91,22 @@
       "title": "floid in Weihnachtsstimmung",
       "content": "Ho ho ho! floid wünscht allen Zuschauern und Freunden eine besinnliche Weihnachtszeit!",
       "category": "blog",
-      "post_type": "default"
+      "post_type": "text"
+    },
+    {
+      "id": 7,
+      "title": "Dein Weihnachtsgruß - BEST OF 2016",
+      "content": "Ihr habt gegrüßt - wir haben gefilmt!Und so haben wir aus Eren Grüßen auch in diesem wieder ein sympathisch-festliches Best Of schneiden können. Vielen Dank an Alle, die mitgemacht haben und viel Spaß beim Verschicken Eurer Grüße.Wir freuen uns auf 2017 - gemeinsam mit Euch! Bis dahin wünschen wir all unseren Zuschauern und Freunden eine besinnliche Weihnachtszeit, einen fleißigen Weihnachtsmann und einen guten Rutsch ins neue Jahr!",
+      "category": "shuffle",
+      "post_type": "quote",
+      "get_thumbnail": true,
+      "quote": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+      "thumbnail": {
+        "src": "//placehold.it/250x150"
+      },
+      "large": {
+        "src": "//placehold.it/650x450"
+      }
     }
   ]
 }
