@@ -47,6 +47,7 @@ export default function (req, res, next) {
         template,
         JSON.parse(body),
         (err, html) => {
+          res.charset = 'utf-8';
           res.end(html);
         }
       );
