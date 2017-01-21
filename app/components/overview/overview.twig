@@ -1,5 +1,7 @@
 {% macro default() %}
+  {% import '../card/card.twig' as card %}
   <ul class="overview">
+    <!--<li class="overview__item"><img src="//placehold.it/250x300"></li>
     <li class="overview__item"><img src="//placehold.it/250x300"></li>
     <li class="overview__item"><img src="//placehold.it/250x300"></li>
     <li class="overview__item"><img src="//placehold.it/250x300"></li>
@@ -7,7 +9,9 @@
     <li class="overview__item"><img src="//placehold.it/250x300"></li>
     <li class="overview__item"><img src="//placehold.it/250x300"></li>
     <li class="overview__item"><img src="//placehold.it/250x300"></li>
-    <li class="overview__item"><img src="//placehold.it/250x300"></li>
-    <li class="overview__item"><img src="//placehold.it/250x300"></li>
+    <li class="overview__item"><img src="//placehold.it/250x300"></li>-->
+    {% for i in 0..9 %}
+      {{ card.default() }}
+    {% endfor %}
   </ul>
 {% endmacro %}

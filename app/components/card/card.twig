@@ -1,0 +1,18 @@
+{% macro default() %}
+{% import '../button/button.twig' as button %}
+{% import '../rating/rating.twig' as rating %}
+
+  <li class="card">
+    <img class="card__thumb" src="//placehold.it/240x120">
+    <h3 class="card__title">Campus Compact KW 46</h3>
+    <p class="card__excerpt">Edith und Pepe nehmen euch mit zu ihrem liebsten Platz in Leipzig - in der neuen Ausgabe: Mein Lieblingsort.</p>
+    <div class="card__action">
+      <div class="card__rating">
+        {{ rating.default() }}
+      </div>
+
+      {{ button.cta() }}
+    </div>
+  </li>
+
+{% endmacro %}
