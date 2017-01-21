@@ -1,0 +1,11 @@
+.avatar {
+  display: inline-block;
+
+  border: 1px solid var(--grayDefault);
+  border-radius: 50em;
+}
+
+.avatar__image {
+  border: 2px solid var(--lightDefault);
+  border-radius: 50em;
+}
