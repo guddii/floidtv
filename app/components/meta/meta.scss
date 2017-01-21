@@ -1,10 +1,18 @@
 .meta {
-  display: flex;
-
-  padding: 5rem 0;
+  display: block;
 
   background: var(--grayContainer);
   box-shadow: var(--shadow);
 
-  justify-content: space-around;
 }
+
+@media screen and (--large-viewport) {
+
+  .meta--quotes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+

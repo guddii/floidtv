@@ -1,7 +1,7 @@
 {% macro default(path, alt) %}
   {% if path.src %}
-    <picture class="picture picture--float">
-      <img src="{{ path.src }}" alt="{{ alt }}">
+    <picture class="picture">
+      <img class="picture__image" src="{{ path.src }}" alt="{{ alt }}">
     </picture>
   {% endif %}
 {% endmacro %}

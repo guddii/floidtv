@@ -1,8 +1,9 @@
 .avatar {
   display: inline-block;
 
-  border: 1px solid var(--grayDefault);
+  border: 1px solid var(--grayLight);
   border-radius: 50em;
+  line-height: 0;
 }
 
 .avatar__image {

@@ -1,5 +1,5 @@
-{% macro default() %}
+{% macro default(author) %}
   <div class="avatar">
-    <img class="avatar__image" src="//placehold.it/100x100"/>
+    <img class="avatar__image" src="{{ author.image }}"/>
   </div>
 {% endmacro %}
