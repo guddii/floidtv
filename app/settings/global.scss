@@ -1,13 +1,18 @@
 :root {
-  --brandPrimary: #F39D00;
-  --brandPrimaryDark: #A66C00;
-  --brandPrimaryLight: #FFAE19;
-  --brandSecondaryDark: #004BA6;
-  --brandSecondaryLight: #006DF3;
+
+  --brandPrimary: #f39d00;
+  --brandPrimaryDark: #a66c00;
+  --brandPrimaryLight: #ffae19;
+  --brandSecondaryDark: #004ba6;
+  --brandSecondaryLight: #006df3;
+
   --grayDefault: #666666;
   --grayLight: #999999;
   --grayDark: #1d1d1d;
-  --grayContainer: #EAEAEA;
+  --grayContainer: #eaeaea;
+
+  --lightDefault: #ffffff;
 
   --shadow: 5px 5px 10px rgba(0,0,0,0.3);
+
 }

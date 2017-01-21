@@ -1,16 +1,11 @@
-.avatar{
-  border-radius: 50em;
-  border-color: var(--grayDefault);
-  border-width: 1px;
-  border-style: solid;
+.avatar {
   display: inline-block;
+
+  border: 1px solid var(--grayDefault);
+  border-radius: 50em;
 }
 
-
-.avatar__image{
+.avatar__image {
+  border: 2px solid var(--lightDefault);
   border-radius: 50em;
-  border-color: #ffffff;
-  border-width: 1px;
-  border-style: solid;
-
 }
