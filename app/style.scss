@@ -48,8 +48,10 @@ Tags: floid
  * page.................Page sections.
  */
 @import "./components/alert/alert";
+@import "./components/avatar/avatar";
 @import "./components/brand/brand";
 @import "./components/button/button";
+@import "./components/card/card";
 @import "./components/content/content";
 @import "./components/footer/footer";
 @import "./components/forms/forms";
@@ -57,12 +59,11 @@ Tags: floid
 @import "./components/icons/icons";
 @import "./components/link/link";
 @import "./components/masthead/masthead";
+@import "./components/meta/meta";
 @import "./components/navigation/navigation";
 @import "./components/overview/overview";
 @import "./components/page/page";
 @import "./components/picture/picture";
+@import "./components/rating/rating";
 @import "./components/section/section";
 @import "./components/stage/stage";
-@import "./components/card/card";
-@import "./components/rating/rating";
-
