@@ -20,9 +20,13 @@
   .card:focus,
   .card:hover {
     color: var(--grayDefault);
-    outline-color: red;
+    outline-color: var(--brandPrimary);
     outline-style: auto;
     outline-width: 5px;
+  }
+
+  .card:focus {
+    outline-color: var(--brandSecondaryLight);
   }
 
   .card__thumb {
