@@ -5,7 +5,7 @@
     <h2 class="visible visible--sr">{{ title|default("Beitrag") }}</h2>
     <section class="page__content">
       {% if post.post_type == 'video' %}
-        {{ content.default(post) }}
+        {{ content.slim(post) }}
       {% else %}
         <div class="meta">
           {{ content.default(post) }}

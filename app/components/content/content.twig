@@ -54,3 +54,55 @@
   </div>
 
 {% endmacro %}
+
+{% macro slim(post) %}
+
+  {% import '../avatar/avatar.twig' as avatar %}
+  {% import '../picture/picture.twig' as picture %}
+
+  <div class="content content--{{ post.post_type|default("message") }}">
+    <div class="content__body">
+      {% if post.post_type == 'quote' %}
+        <div class="content__object content__object--center">
+          <div class="content__quote">
+          <blockquote class="content__quote-block">
+            {{ post.quote }}
+          </blockquote>
+          {% if not post.title and not post.content %}
+            {%  if post.author.image %}
+              {{ avatar.default(post.author) }}
+            {% endif %}
+            {% if post.author.name %}<a href="{{ post.author.path }}"> {{ post.author.name }} </a><br>{% endif %}
+          {% endif %}
+          </div>
+        </div>
+      {% elseif post.post_type == 'video' %}
+
+      {% elseif post.large %}
+        <div class="content__object">
+          {{ picture.default(post.large, "Alt") }}
+        </div>
+      {% endif %}
+
+      {% if post.title and post.content %}
+      <div class="content__wysiwyg">
+
+        <header content="content__head">
+          <h3 content="content__heading">{{ post.title }}</h3>
+        </header>
+        {{ post.content }}
+
+        <footer class="content__footer">
+          {%  if post.author.image %}
+            {{ avatar.default(post.author) }}
+          {% endif %}
+          {% if post.author.name %}<a href="{{ post.author.path }}"> {{ post.author.name }} </a><br>{% endif %}
+          {{ post.post_date|date }}
+        </footer>
+      </div>
+      {% endif %}
+    </div>
+
+  </div>
+
+{% endmacro %}

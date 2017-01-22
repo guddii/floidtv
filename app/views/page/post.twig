@@ -1,7 +1,11 @@
 {% extends "../single.twig" %}
+{% import '../../components/stage/stage.twig' as stage %}
 
 {% block content %}
 
+  {% if post.post_type == 'video' %}
+    {{ stage.default() }}
+  {% endif %}
   {{ page.article(post, title) }}
 
 {% endblock %}
