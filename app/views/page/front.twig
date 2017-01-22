@@ -1,68 +1,15 @@
-{% extends "../default.twig" %}
-{% import '../../components/stage/stage.twig' as stage %}
-{% import '../../components/overview/overview.twig' as overview %}
-{% import '../../components/button/button.twig' as button %}
-{% import '../../components/headline/headline.twig' as headline %}
-{% import '../../components/content/content.twig' as content %}
+{% extends "../single.twig" %}
+{% import '../../components/tabbar/tabbar.twig' as tabbar %}
 
 {% block content %}
 
   {{ stage.default() }}
-
-{% endblock %}
-
-{% block aside %}
-
   <section class="section">
     <div class="section__content">
-      {{ headline.archive() }}
-    </div>
-    {{ overview.default() }}
-  </section>
-
-  <section class="section">
-    <div class="section__content">
-      {{ headline.default('Übersicht 2') }}
-    </div>
-    {{ overview.default() }}
-  </section>
-
-  <section class="section">
-    <div class="section__content">
-      {{ headline.default('Übersicht 3') }}
-    </div>
-    {{ overview.default() }}
-  </section>
-
-  <section class="section">
-    <div class="section__content">
-
-      {{ headline.default('Erfolgsgeschichten') }}
-
-      <div class="meta meta--quotes">
-        <div class="meta__left">
-          {{ content.default({
-            "author": {
-              "name": "Max Musterman",
-              "image": "//placehold.it/35x35"
-            },
-            "post_type": "quote",
-            "quote": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."
-          }) }}
-        </div>
-        <div class="meta__right">
-          {{ content.default({
-            "author": {
-              "name": "Max Musterman",
-              "image": "//placehold.it/35x35"
-            },
-            "post_type": "quote",
-            "quote": "Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. "
-          }) }}
-        </div>
-
-      </div>
+      {{ tabbar.default() }}
     </div>
   </section>
 
 {% endblock %}
+
+

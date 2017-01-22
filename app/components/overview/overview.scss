@@ -1,11 +1,12 @@
 @media screen {
 
   .overview {
+
     overflow-x: auto;
     overflow-y: hidden;
 
     margin: 0;
-    padding: 0 10px 5px 5px;
+    padding: 5px 10px 5px 5px;
 
     list-style: none;
 
@@ -14,8 +15,9 @@
     -webkit-overflow-scrolling: touch;
     overflow-scrolling: touch;
     scroll-snap-type: mandatory;
-    scroll-snap-destination: 260px 100%;
+    scroll-snap-destination: 100% 100%;
     touch-action: pan-x;
+    text-align: center;
   }
 
   .overview__item {
@@ -23,8 +25,8 @@
 
     display: inline-block;
 
-    width: 260px;
     padding: 5px;
+    margin: auto;
 
     -webkit-scroll-snap-coordinate: 100% 100%;
     scroll-snap-coordinate: 100% 100%;

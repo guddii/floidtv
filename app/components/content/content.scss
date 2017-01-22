@@ -71,6 +71,8 @@
     color: var(--grayLight);
   }
 
+
+
 }
 
 @media screen and (--large-viewport) {
@@ -84,6 +86,11 @@
     padding: 4rem 0 4rem 4rem;
 
     border-bottom: 0;
+  }
+
+  .content__object--center {
+    padding: 4rem;
+    margin: auto;
   }
 
   .content__wysiwyg {
