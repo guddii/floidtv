@@ -6,7 +6,7 @@
   {% if post is iterable %}
 
     {% for entry in post %}
-      {{ page.article(entry, title) }}
+      {{ page.articlelist(entry, title) }}
     {% endfor %}
 
   {% endif %}

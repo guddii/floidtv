@@ -19,3 +19,26 @@
     {% endif %}
   </article>
 {% endmacro %}
+
+{% macro articlelist(post, title) %}
+  {% import '../content/content.twig' as content %}
+  {% import '../comment/comment.twig' as comment %}
+  <article class="page__article">
+    <h2 class="visible visible--sr">{{ title|default("Beitrag") }}</h2>
+    <section class="page__content">
+      {% if post.post_type == 'video' %}
+        {{ content.default(post) }}
+      {% else %}
+        <div class="meta">
+          {{ content.default(post) }}
+        </div>
+      {% endif %}
+    </section>
+    {% if post.comment_status == 'open' %}
+      <section class="page__comments">
+        {{ comment.default(post.get_comments()) }}
+      </section>
+    {% endif %}
+  </article>
+{% endmacro %}
+
