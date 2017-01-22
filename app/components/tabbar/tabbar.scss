@@ -1,15 +1,15 @@
 .tabbar {
 
   //position
-  top: 3rem;
-  bottom: 3rem;
+  top: 1rem;
+  //bottom: 3rem;
   margin: auto;
   position: relative;
 
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
+  //justify-content: center;
 
   //dimension
   height: 60rem;
@@ -19,7 +19,6 @@
 .tabbar__head {
 
   //dimension
-
   height: 10rem;
 
   //flexbox

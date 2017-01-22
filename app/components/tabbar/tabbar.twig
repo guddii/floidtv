@@ -1,3 +1,5 @@
+{% import '../../components/card/card.twig' as card %}
+
 {% macro default() %}
 
   <div class="tabbar">
@@ -5,6 +7,8 @@
       <a class="tabbar__tab tabbar__tab__active" data-selector="tabbar/tab" data-id="1" href="#!">
 
         <h3>Unsere Sendungen</h3>
+        <p>Hallo</p>
+
 
       </a>
       <a class="tabbar__tab" data-selector="tabbar/tab" data-id="2" href="#!">
@@ -21,17 +25,26 @@
     <div class="tabbar__content">
       <span class="tabbar__item" data-selector="tabbar/item" data-id="1">
 
-        1
+        <div card__container>
+
+          <img src="//placehold.it/200x300"/>
+          <img src="//placehold.it/200x300"/>
+          <img src="//placehold.it/200x300"/>
+          <img src="//placehold.it/200x300"/>
+          <img src="//placehold.it/200x300"/>
+          <img src="//placehold.it/200x300"/>
+
+        </div>
 
       </span>
       <span class="tabbar__item tabbar__item--hidden" data-selector="tabbar/item" data-id="2">
 
-        2
+        Karriere bei floidtv
 
       </span>
       <span class="tabbar__item tabbar__item--hidden" data-selector="tabbar/item" data-id="3">
 
-        3
+        Treffen mit den Redakteuren
 
       </span>
 
