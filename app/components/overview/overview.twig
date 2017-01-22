@@ -8,3 +8,14 @@
     {% endfor %}
   </ul>
 {% endmacro %}
+
+{% macro media(entries) %}
+  {% import '../card/card.twig' as card %}
+  <ul class="overview">
+    {% for entry in entries %}
+      <li class="overview__item">
+        {{ card.media(entry) }}
+      </li>
+    {% endfor %}
+  </ul>
+{% endmacro %}

@@ -14,6 +14,7 @@ export default function () {
         menu: JSON.parse(fs.readFileSync('infra/data/menu.json', 'utf8')),
         site: JSON.parse(fs.readFileSync('infra/data/site.json', 'utf8')),
         aside: {
+          categories: aside.categories,
           overview: {
             overview1: {
               title: 'Campus Compact',
@@ -31,7 +32,7 @@ export default function () {
                   return item;
                 }
               })
-            },
+            }
           },
           testimonials: aside.post.filter(function (item) {
             if (item.post_type === 'quote') {

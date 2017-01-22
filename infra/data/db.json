@@ -386,5 +386,85 @@
         "image": "//placehold.it/35x35"
       }
     }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "title": "Kompakt",
+      "sludge": "kompakt",
+      "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ",
+      "get_thumbnail": true,
+      "thumbnail": {
+        "src": "//placehold.it/250x150"
+      },
+      "large": {
+        "src": "//placehold.it/650x450"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Magazin",
+      "sludge": "magatin",
+      "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ",
+      "get_thumbnail": true,
+      "thumbnail": {
+        "src": "//placehold.it/250x150"
+      },
+      "large": {
+        "src": "//placehold.it/650x450"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Shuffle",
+      "sludge": "shuffle",
+      "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ",
+      "get_thumbnail": true,
+      "thumbnail": {
+        "src": "//placehold.it/250x150"
+      },
+      "large": {
+        "src": "//placehold.it/650x450"
+      }
+    },
+    {
+      "id": 4,
+      "title": "X-Cam",
+      "sludge": "xcam",
+      "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ",
+      "get_thumbnail": true,
+      "thumbnail": {
+        "src": "//placehold.it/250x150"
+      },
+      "large": {
+        "src": "//placehold.it/650x450"
+      }
+    },
+    {
+      "id": 5,
+      "title": "Konne turnt",
+      "sludge": "konne",
+      "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ",
+      "get_thumbnail": true,
+      "thumbnail": {
+        "src": "//placehold.it/250x150"
+      },
+      "large": {
+        "src": "//placehold.it/650x450"
+      }
+    },
+    {
+      "id": 6,
+      "title": "Mein Lieblingsort",
+      "sludge": "lieblingsort",
+      "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ",
+      "get_thumbnail": true,
+      "thumbnail": {
+        "src": "//placehold.it/250x150"
+      },
+      "large": {
+        "src": "//placehold.it/650x450"
+      }
+    }
   ]
 }

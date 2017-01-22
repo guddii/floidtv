@@ -30,7 +30,7 @@
           {{ headline.default(entries.title) }}
         {% endif %}
       </div>
-      {{ overview.default(entries.posts) }}
+      {{ overview.media(entries.posts) }}
     </section>
 
   {% endfor %}
@@ -47,7 +47,6 @@
         <div class="meta__right">
           {{ content.default(aside.testimonials[1]) }}
         </div>
-
       </div>
     </div>
   </section>

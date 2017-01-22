@@ -4,13 +4,17 @@
     position: relative;
     display: inline-block;
     margin: 0;
-    width: 230px;
+    width: 220px;
     height: 320px;
     padding: 10px;
-    background-color: var(--grayHighlight);
     border-radius: 5px;
-    color: var(--grayDefault);
+    color: var(--grayDark);
     text-align: left;
+  }
+
+  .card--media {
+    background-color: var(--grayHighlight);
+    color: var(--grayDefault);
   }
 
   .card:focus,
@@ -28,11 +32,17 @@
   }
 
   .card__title {
-    color: var(--grayLight);
+    color: var(--grayDark);
     font-size: 1.5rem;
+    margin-top: 5px;
     margin-bottom: 0;
     overflow: hidden;
     text-overflow: ellipsis;
+    display: block;
+  }
+
+  .card--media .card__title {
+    color: var(--grayLight);
   }
 
   .card__excerpt {

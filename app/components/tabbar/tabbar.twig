@@ -1,53 +1,35 @@
-{% import '../../components/card/card.twig' as card %}
+{% macro default(aside) %}
 
-{% macro default() %}
+  {% import '../overview/overview.twig' as overview %}
 
   <div class="tabbar">
     <div class="tabbar__head">
       <a class="tabbar__tab tabbar__tab__active" data-selector="tabbar/tab" data-id="1" href="#!">
-
         <h3>Unsere Sendungen</h3>
-        <p>Hallo</p>
-
-
       </a>
       <a class="tabbar__tab" data-selector="tabbar/tab" data-id="2" href="#!">
-
         <h3>Mach mit</h3>
-
       </a>
       <a class="tabbar__tab" data-selector="tabbar/tab" data-id="3" href="#!">
-
         <h3>Triff uns</h3>
-
       </a>
     </div>
     <div class="tabbar__content">
       <span class="tabbar__item" data-selector="tabbar/item" data-id="1">
-
-        <div card__container>
-
-          <img src="//placehold.it/200x300"/>
-          <img src="//placehold.it/200x300"/>
-          <img src="//placehold.it/200x300"/>
-          <img src="//placehold.it/200x300"/>
-          <img src="//placehold.it/200x300"/>
-          <img src="//placehold.it/200x300"/>
-
-        </div>
-
+            {{ overview.default(aside.categories) }}
       </span>
       <span class="tabbar__item tabbar__item--hidden" data-selector="tabbar/item" data-id="2">
-
-        Karriere bei floidtv
-
+        <div class="tabbar__wysiwyg">
+        <h3>Karriere mit floidtv</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
+        </div>
       </span>
       <span class="tabbar__item tabbar__item--hidden" data-selector="tabbar/item" data-id="3">
-
-        Treffen mit den Redakteuren
-
+        <div class="tabbar__wysiwyg">
+        <h3>Treffen mit den Redakteuren</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
+        </div>
       </span>
-
     </div>
   </div>
 
