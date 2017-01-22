@@ -5,7 +5,11 @@
 
 {% block content %}
 
-  {{ tabbar.default() }}
+  <section class="section">
+    <div class="section__content">
+      {{ tabbar.default() }}
+    </div>
+  </section>
   {{ parent() }}
 
 {% endblock %}
