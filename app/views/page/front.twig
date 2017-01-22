@@ -4,13 +4,19 @@
 {% import '../../components/button/button.twig' as button %}
 {% import '../../components/headline/headline.twig' as headline %}
 
+{% import '../../components/tabbar/tabbar.twig' as tabbar %}
+
 {% block content %}
 
   {{ stage.default() }}
 
+  {{ tabbar.default() }}
+
 {% endblock %}
 
 {% block aside %}
+
+
 
   <section class="section">
     <div class="section__content">
@@ -19,4 +25,7 @@
   </section>
   {{ overview.default() }}
 
+
 {% endblock %}
+
+
