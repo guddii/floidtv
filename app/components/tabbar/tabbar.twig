@@ -1,46 +1,36 @@
-{% macro default() %}
+{% macro default(aside) %}
+
+  {% import '../overview/overview.twig' as overview %}
 
   <div class="tabbar">
-
     <div class="tabbar__head">
-
-      <a class="tabbar__tab" id="tab__active" data-selector="tabbar/tab" data-id="1" href="#!">
-        <h1>Unsere Sendungen</h1>
+      <a class="tabbar__tab tabbar__tab__active" data-selector="tabbar/tab" data-id="1" href="#!">
+        <h3>Unsere Sendungen</h3>
       </a>
-
-      <a class="tabbar__tab" id="tab2" data-selector="tabbar/tab" data-id="2" href="#!">
-        <h1>Mach mit</h1>
+      <a class="tabbar__tab" data-selector="tabbar/tab" data-id="2" href="#!">
+        <h3>Mach mit</h3>
       </a>
-
-      <a class="tabbar__tab" id="tab3" data-selector="tabbar/tab" data-id="3" href="#!">
-        <h1>Triff uns</h1>
+      <a class="tabbar__tab" data-selector="tabbar/tab" data-id="3" href="#!">
+        <h3>Triff uns</h3>
       </a>
-
     </div>
-
     <div class="tabbar__content">
-
-      <span class="tabbar__item" data-selector="tabbar/item" data-id="1">1</span>
-      <span class="tabbar__item tabbar__item--hidden" data-selector="tabbar/item" data-id="2" >2</span>
-      <span class="tabbar__item tabbar__item--hidden" data-selector="tabbar/item" data-id="3" >3</span>
-
+      <span class="tabbar__item" data-selector="tabbar/item" data-id="1">
+            {{ overview.default(aside.categories) }}
+      </span>
+      <span class="tabbar__item tabbar__item--hidden" data-selector="tabbar/item" data-id="2">
+        <div class="tabbar__wysiwyg">
+        <h3>Karriere mit floidtv</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
+        </div>
+      </span>
+      <span class="tabbar__item tabbar__item--hidden" data-selector="tabbar/item" data-id="3">
+        <div class="tabbar__wysiwyg">
+        <h3>Treffen mit den Redakteuren</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
+        </div>
+      </span>
     </div>
-
   </div>
 
 {% endmacro %}
-
-<!--
-<div class="tabbar">
-  <div class="tabbar__head">
-    <a class="tabbar__tab" data-selector="tabbar/tab" data-id="1" href="/page/1">1</a>
-    <a class="tabbar__tab" data-selector="tabbar/tab" data-id="2" href="/page/2">2</a>
-    <a class="tabbar__tab" data-selector="tabbar/tab" data-id="3" href="/page/3">3</a>
-  </div>
-  <ul class="tabbar__body">
-    <li class="tabbar__item" data-selector="tabbar/item" data-id="1">1</li>
-    <li class="tabbar__item tabbar__item--hidden" data-selector="tabbar/item" data-id="2" >2</li>
-    <li class="tabbar__item tabbar__item--hidden" data-selector="tabbar/item" data-id="3" >3</li>
-  </ul>
-</div>
--->

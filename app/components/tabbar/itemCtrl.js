@@ -1,3 +1,13 @@
+function tabCtrl(id) {
+  document.querySelectorAll('[data-selector="tabbar/tab"]').forEach(function (element) {
+    if (element.dataset.id === id) {
+      element.classList.add('tabbar__tab__active');
+    } else {
+      element.classList.remove('tabbar__tab__active');
+    }
+  });
+}
+
 function tabItemCtrl(id) {
   document.querySelectorAll('[data-selector="tabbar/item"]').forEach(function (element) {
     if (element.dataset.id === id) {
@@ -8,19 +18,15 @@ function tabItemCtrl(id) {
   });
 }
 
-[].forEach.call(document.querySelectorAll('[data-selector="tabbar/tab"]'), function (a) {
-  a.addEventListener('click', function (event) {
-    event.preventDefault();
-    tabItemCtrl(this.dataset.id)
+function init() {
+  [].forEach.call(document.querySelectorAll('[data-selector="tabbar/tab"]'), function (a) {
+    a.addEventListener('click', function (event) {
+      event.preventDefault();
+      tabCtrl(this.dataset.id);
+      tabItemCtrl(this.dataset.id);
 
-  }, false);
-})
-
-function activate() {
-  tabs = document.getElementsByClassName("tabbar__tabs");
-  for (var i = 0; i < tabs.length; i++) {
-
-  }
+    }, false);
+  });
 }
 
-export default tabItemCtrl;
+export default init;
