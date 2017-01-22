@@ -34,8 +34,10 @@
   vertical-align: middle;
   line-height: 10rem;
 
-  //display: none;
+}
 
+#tab__active {
+  background-color: #EAEAEA;
 }
 
 .tabbar__item--hidden {
