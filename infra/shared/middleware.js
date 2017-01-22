@@ -47,6 +47,10 @@ export default function (req, res, next) {
         template,
         JSON.parse(body),
         (err, html) => {
+          if (res.set) {
+            res.set({'Content-Type': 'text/html; charset=UTF-8'})
+          }
+
           res.end(html);
         }
       );

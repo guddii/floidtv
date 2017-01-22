@@ -2,8 +2,13 @@
 
   .masthead {
     display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+
     justify-content: space-between;
     align-items: center;
+    touch-action: pan-x;
+    -webkit-overflow-scrolling: touch;
   }
 
   .masthead__brand {
@@ -12,11 +17,9 @@
 
   .masthead__navigation {
     text-align: right;
+
+    flex-wrap: wrap;
     flex-grow: 1;
-    overflow-x: auto;
-    overflow-y: hidden;
-    touch-action: pan-x;
-    -webkit-overflow-scrolling: touch;
   }
 
 }

@@ -25,11 +25,12 @@
   }
 
   .brand__slogan {
-    display: inline-block;
+
     color: var(--grayLight);
     margin-top: 0;
     margin-bottom: 0;
     padding: 4px 0 0 10px;
+    display: none;
   }
 
   .brand:focus .brand__slogan,
@@ -45,8 +46,8 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (--large-viewport) {
   .brand__slogan {
-    display: none;
+    display: inline-block;
   }
 }

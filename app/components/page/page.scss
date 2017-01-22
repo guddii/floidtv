@@ -3,15 +3,19 @@
   .page {
     margin: 0;
     padding: 0;
+
     background: #2a2a2a;
   }
 
   .page__separator {
+    position: static;
+
     display: block;
     clear: both;
-    position: static;
+
     height: 1px;
     margin: 0 auto;
+
     color: blue;
     border-bottom: 1px solid #333;
     background: #1c1c1c;
@@ -29,11 +33,20 @@
   .page__article {
     display: block;
     clear: both;
-    padding-bottom: 30px;
+
+    padding: 1rem;
   }
 
   .page__article + .page__article {
-    border-top: 1px solid var(--grayLight);
+    border-top: 1px solid var(--grayDark);
+  }
+
+}
+
+@media screen and (--large-viewport) {
+
+  .page__article {
+    padding: 4rem;
   }
 
 }

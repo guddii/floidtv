@@ -1,4 +1,9 @@
-.picture--float {
-  float: left;
-  margin-right: 30px;
+.picture {
+  display: inline-block;
+
+  max-width: 100%;
+}
+
+.picture__image {
+  border-radius: 5px;
 }

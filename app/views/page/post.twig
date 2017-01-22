@@ -1,4 +1,7 @@
-{% extends "../default.twig" %}
-{% import '../../components/rating/rating.twig' as rating %}
+{% extends "../single.twig" %}
 
-{{ rating.default() }}
+{% block content %}
+
+  {{ page.article(post, title) }}
+
+{% endblock %}

@@ -1,10 +1,21 @@
 :root {
-  --brandPrimary: #F39D00;
-  --brandPrimaryDark: #A66C00;
-  --brandPrimaryLight: #FFAE19;
-  --brandSecondaryDark: #004BA6;
-  --brandSecondaryLight: #006DF3;
+
+  --brandPrimary: #f39d00;
+  --brandPrimaryDark: #a66c00;
+  --brandPrimaryLight: #ffae19;
+  --brandSecondaryDark: #004ba6;
+  --brandSecondaryLight: #006df3;
+
   --grayDefault: #666666;
   --grayLight: #999999;
   --grayDark: #1d1d1d;
+  --grayContainer: #eaeaea;
+  --grayHighlight: #363636;
+
+  --lightDefault: #ffffff;
+
+  --shadow: 0 0 10px rgba(0,0,0,0.3);
+
 }
+
+@custom-media --large-viewport (min-width: 50em);

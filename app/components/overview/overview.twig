@@ -1,13 +1,10 @@
-{% macro default() %}
+{% macro default(entries) %}
+  {% import '../card/card.twig' as card %}
   <ul class="overview">
-    <li class="overview__item"><img src="//placehold.it/250x300"></li>
-    <li class="overview__item"><img src="//placehold.it/250x300"></li>
-    <li class="overview__item"><img src="//placehold.it/250x300"></li>
-    <li class="overview__item"><img src="//placehold.it/250x300"></li>
-    <li class="overview__item"><img src="//placehold.it/250x300"></li>
-    <li class="overview__item"><img src="//placehold.it/250x300"></li>
-    <li class="overview__item"><img src="//placehold.it/250x300"></li>
-    <li class="overview__item"><img src="//placehold.it/250x300"></li>
-    <li class="overview__item"><img src="//placehold.it/250x300"></li>
+    {% for entry in entries %}
+      <li class="overview__item">
+        {{ card.default(entry) }}
+      </li>
+    {% endfor %}
   </ul>
 {% endmacro %}

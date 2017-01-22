@@ -1,0 +1,18 @@
+.meta {
+  display: block;
+
+  background: var(--grayContainer);
+  box-shadow: var(--shadow);
+
+}
+
+@media screen and (--large-viewport) {
+
+  .meta--quotes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
