@@ -4,15 +4,15 @@
 
     <div class="tabbar__head">
 
-      <a class="tabbar__tab" id="tab__active" data-selector="tabbar/tab" data-id="1" href="#!">
+      <a class="tabbar__tab" onclick="(this.className=='tabbar__tab')?this.className='tabbar__tab__active':this.className='tabbar__tab';" data-selector="tabbar/tab" data-id="1" href="#!">
         <h1>Unsere Sendungen</h1>
       </a>
 
-      <a class="tabbar__tab" id="tab2" data-selector="tabbar/tab" data-id="2" href="#!">
+      <a class="tabbar__tab" onclick="(this.className=='tabbar__tab')?this.className='tabbar__tab__active':this.className='tabbar__tab';"data-selector="tabbar/tab" data-id="2" href="#!">
         <h1>Mach mit</h1>
       </a>
 
-      <a class="tabbar__tab" id="tab3" data-selector="tabbar/tab" data-id="3" href="#!">
+      <a class="tabbar__tab" onclick="(this.className=='tabbar__tab')?this.className='tabbar__tab__active':this.className='tabbar__tab';"data-selector="tabbar/tab" data-id="3" href="#!">
         <h1>Triff uns</h1>
       </a>
 
@@ -29,6 +29,9 @@
   </div>
 
 {% endmacro %}
+
+<div class="firstClass" onclick="this.className='secondClass'">
+
 
 <!--
 <div class="tabbar">
