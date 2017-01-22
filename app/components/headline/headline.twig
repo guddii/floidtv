@@ -6,7 +6,7 @@
   </div>
 {% endmacro %}
 
-{% macro archive() %}
+{% macro archive(text) %}
   {% import '../forms/forms.twig' as forms %}
   <div class="headline">
     <div class="headline__head">
@@ -20,7 +20,7 @@
       </div>
     </div>
     <div class="headline__body">
-      <h3 class="headline__text">Campus Compact</h3>
+      <h3 class="headline__text">{{ text|default('Campus Compact') }}</h3>
     </div>
   </div>
 {% endmacro %}

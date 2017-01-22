@@ -1,10 +1,16 @@
 .footer {
-  display: flex;
-  justify-content: space-between;
-  color: var(--grayDefault);
+  font-size: 1.75rem;
   line-height: 1;
+
+  display: flex;
+
+  color: var(--grayDefault);
+
+  justify-content: space-between;
 }
 
 .footer__links {
+  font-size: 1.75rem;
+
   text-align: right;
 }

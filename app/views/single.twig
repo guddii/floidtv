@@ -1,0 +1,55 @@
+{% extends "master.twig" %}
+{% import '../components/page/page.twig' as page %}
+{% import '../components/stage/stage.twig' as stage %}
+{% import '../components/overview/overview.twig' as overview %}
+{% import '../components/button/button.twig' as button %}
+{% import '../components/headline/headline.twig' as headline %}
+{% import '../components/content/content.twig' as content %}
+
+{% block content %}
+
+  {% if post is iterable %}
+
+    {% for entry in post %}
+      {{ page.article(entry, title) }}
+    {% endfor %}
+
+  {% endif %}
+
+{% endblock %}
+
+{% block aside %}
+
+  {% for entries in aside.overview %}
+
+    <section class="section">
+      <div class="section__content">
+        {% if loop.first %}
+          {{ headline.archive(entries.title) }}
+        {% else %}
+          {{ headline.default(entries.title) }}
+        {% endif %}
+      </div>
+      {{ overview.default(entries.posts) }}
+    </section>
+
+  {% endfor %}
+
+  <section class="section">
+    <div class="section__content">
+      {{ headline.default('Erfolgsgeschichten') }}
+    </div>
+    <div class="section__content section__content--spaced">
+      <div class="meta meta--quotes">
+        <div class="meta__left">
+          {{ content.default(aside.testimonials[0]) }}
+        </div>
+        <div class="meta__right">
+          {{ content.default(aside.testimonials[1]) }}
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+{% endblock %}

@@ -6,7 +6,7 @@
   <div class="content content--{{ post.post_type|default("message") }}">
     <div class="content__body">
       {% if post.post_type == 'quote' %}
-        <div class="content__object ">
+        <div class="content__object content__object--center">
           <div class="content__quote">
           <blockquote class="content__quote-block">
             {{ post.quote }}

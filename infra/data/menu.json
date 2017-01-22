@@ -6,7 +6,7 @@
       "classes": ["link--main"]
     },
     {
-      "get_link": "/catalogue/text/blog/",
+      "get_link": "/feed/text/blog/",
       "title": "Blog",
       "classes": ["link--main"]
     },

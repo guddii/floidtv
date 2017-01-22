@@ -1,26 +1,13 @@
-{% extends "../default.twig" %}
+{% extends "../list.twig" %}
+{% import '../../components/tabbar/tabbar.twig' as tabbar %}
 {% import '../../components/content/content.twig' as content %}
 {% import '../../components/comment/comment.twig' as comment %}
 
 {% block content %}
 
-
-  {% set newArray = [] %}
-  {% for name in post %}
-    {% if name.category not in newArray %}
-      {% set newArray = newArray|merge([name.category]) %}
-    {% endif %}
-  {% endfor %}
-
-  {% if newArray|length > 1 %}
-    <h2>Filter</h2>
-    <ul>
-      {% for category in newArray %}
-        <li><a href="./{{ category }}">{{ category }}</a></li>
-      {% endfor %}
-    </ul>
-  {% endif %}
-
+  {{ tabbar.default() }}
   {{ parent() }}
 
 {% endblock %}
+
+
