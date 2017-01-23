@@ -19,14 +19,14 @@ function tabItemCtrl(id) {
 }
 
 function init() {
-  [].forEach.call(document.querySelectorAll('[data-selector="tabbar/tab"]'), function (a) {
-    a.addEventListener('click', function (event) {
+  [...document.querySelectorAll('[data-selector="tabbar/tab"]')].forEach(function (tab) {
+    tab.addEventListener('click', function (event) {
       event.preventDefault();
       tabCtrl(this.dataset.id);
       tabItemCtrl(this.dataset.id);
 
     }, false);
-  });
+  })
 }
 
 export default init;
