@@ -10,6 +10,7 @@ License URI: https://github.com/guddii/floidtv/blob/master/LICENSE
 Text Domain: floid
 Tags: floid
 */
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
 /**
  * SETTINGS
  * Global...............Globally-available variables and config.
@@ -22,6 +23,7 @@ Tags: floid
  */
 @import "./libs/normalize-css/normalize";
 @import "./generics/box-sizing";
+@import "./generics/scrollbar";
 /**
  * BASE
  * Accessibility........Accessibility styles.

@@ -1,6 +1,4 @@
 .tabbar {
-
-  //position
   margin: auto auto 20px auto;
   position: relative;
 
@@ -8,30 +6,23 @@
   flex-direction: column;
   flex-wrap: wrap;
 
-  //dimension
-  padding: 1rem;
+  padding: 4rem;
 }
 
 .tabbar__head {
-
   display: none;
-
 }
 
 .tabbar__tab {
-
-  //flexbox
   display: flex;
   flex-grow: 1;
 
   min-height: 10rem;
   padding: 10px;
 
-  //style
   background-color: #2a2a2a;
   color: var(--grayLight);
 
-  //txt align
   text-align: center;
   vertical-align: middle;
 
@@ -46,26 +37,25 @@
 
 .tabbar__tab:hover,
 .tabbar__tab:active {
+  background-color: var(--grayHighlight);
   color: var(--grayLight);
 }
 
 .tabbar__tab__active {
-
-  //style
   background-color: #eaeaea;
   color: var(--grayDark);
+}
 
+.tabbar__tab__active:hover {
+  background-color: #eaeaea;
+  color: var(--grayDark);
 }
 
 .tabbar__content {
-
-  //dimension
   max-width: 100%;
 
-  //style
   background-color: #EAEAEA;
 
-  //txt align
   text-align: center;
   vertical-align: middle;
 }
@@ -73,6 +63,7 @@
 .tabbar__item {
   display: flex;
   flex-direction: row;
+
   border-bottom: 1px solid #2a2a2a;
 }
 
@@ -80,11 +71,11 @@
   padding: 2rem;
 }
 
-h1, h2, h3 {
+.tabbar h1, .tabbar h2, .tabbar h3 {
   display: inline;
 }
 
-ul {
+.tabbar ul {
   list-style: none;
 }
 
@@ -112,10 +103,6 @@ ul {
     touch-action: pan-x;
     text-align: center;
 
-  }
-
-  .tabbar {
-    padding: 4rem;
   }
 
   .tabbar__item {

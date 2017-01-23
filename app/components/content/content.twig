@@ -8,6 +8,63 @@
       {% if post.post_type == 'quote' %}
         <div class="content__object content__object--center">
           <div class="content__quote">
+            <blockquote class="content__quote-block">
+              {{ post.quote }}
+            </blockquote>
+            {% if not post.title and not post.content %}
+              {% if post.author.image %}
+                {{ avatar.default(post.author) }}
+              {% endif %}
+              {% if post.author.name %}<a href="{{ post.author.path }}"> {{ post.author.name }} </a><br>{% endif %}
+            {% endif %}
+          </div>
+        </div>
+      {% elseif post.post_type == 'video' %}
+        <div class="content__object content__object--media">
+          <video class="content__video"
+                 src="/placeholder/placeholder.mp4"
+                 type="video/mp4"
+                 controls poster="//placehold.it/438x246"></video>
+        </div>
+      {% elseif post.large %}
+        <div class="content__object">
+          {{ picture.default(post.large, "Alt") }}
+        </div>
+      {% endif %}
+
+      {% if post.title and post.content %}
+        <div class="content__wysiwyg">
+
+          <header content="content__head">
+            <h3 content="content__heading">{{ post.title }}</h3>
+          </header>
+          {{ post.content }}
+
+          <footer class="content__footer">
+            {% if post.author.image %}
+              {{ avatar.default(post.author) }}
+            {% endif %}
+            {% if post.author.name %}<a href="{{ post.author.path }}"> {{ post.author.name }} </a><br>{% endif %}
+            {{ post.post_date|date }}
+          </footer>
+        </div>
+      {% endif %}
+    </div>
+
+  </div>
+
+{% endmacro %}
+
+{% macro slim(post) %}
+
+  {% import '../avatar/avatar.twig' as avatar %}
+  {% import '../picture/picture.twig' as picture %}
+
+  <div class="content content--{{ post.post_type|default("message") }}">
+    <div class="content__body">
+      {% if post.post_type == 'quote' %}
+        <div class="content__object content__object--center">
+          <div class="content__quote">
           <blockquote class="content__quote-block">
             {{ post.quote }}
           </blockquote>
@@ -20,11 +77,7 @@
           </div>
         </div>
       {% elseif post.post_type == 'video' %}
-        <div class="content__object content__object--media">
-          <video class="content__video"
-                 src="https://fpdl.vimeocdn.com/vimeo-prod-skyfire-std-us/01/2039/7/185199582/610971590.mp4?token=5883cea1_0xd777d6ee71ab93ea877252c65cf4314748bda0ee"
-                 controls poster="//placehold.it/438x246"></video>
-        </div>
+
       {% elseif post.large %}
         <div class="content__object">
           {{ picture.default(post.large, "Alt") }}

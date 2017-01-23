@@ -4,7 +4,7 @@
   {% import '../rating/rating.twig' as rating %}
 
   <a class="card" href="/catalogue/video/{{ entry.sludge }}">
-    <img class="card__thumb" src="{{ entry.thumbnail.src }}">
+    <img class="card__thumb" src="{{ entry.thumbnail.src }}" alt="card-thumbnail">
     <h3 class="card__title">{{ entry.title }}</h3>
     <p class="card__excerpt">{{ entry.content }}</p>
     <div class="card__action">
@@ -20,7 +20,7 @@
   {% import '../rating/rating.twig' as rating %}
 
   <a class="card card--media" href="/post/{{ entry.id }}">
-    <img class="card__thumb" src="{{ entry.thumbnail.src }}">
+    <img class="card__thumb" src="{{ entry.thumbnail.src }}" alt="card-thumbnail">
     <h3 class="card__title">{{ entry.title }}</h3>
     <p class="card__excerpt">{{ entry.content }}</p>
     <div class="card__action">

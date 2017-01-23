@@ -1,0 +1,20 @@
+::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--grayLight);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--brandPrimary);
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--grayHighlight);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--grayLight);
+}

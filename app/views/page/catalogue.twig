@@ -5,13 +5,12 @@
 
 {% block content %}
 
+  {{ parent() }}
+
   <section class="section">
     <div class="section__content">
       {{ tabbar.default(aside) }}
     </div>
   </section>
-  {{ parent() }}
 
 {% endblock %}
-
-
