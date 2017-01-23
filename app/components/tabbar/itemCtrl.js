@@ -19,8 +19,6 @@ function tabItemCtrl(id) {
 			element[i].classList.remove('tabbar__item--hidden');
 		} else {
 			element[i].classList.add('tabbar__item--hidden');
-
-
 		}
 	}
 
