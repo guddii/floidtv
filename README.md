@@ -1,5 +1,5 @@
 # floidtv front-end
-A static page for floidtv.de
+A static page for floidtv.de. If you want to view a deployed preview of this project, navigate your Browser to: https://floidtv.herokuapp.com/
 
 [![Build Status](https://travis-ci.com/guddii/floidtv.svg?token=eegTHzinhpzjEegiUyMy&branch=master)](https://travis-ci.com/guddii/floidtv)
 
