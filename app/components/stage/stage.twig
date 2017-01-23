@@ -1,8 +1,9 @@
 {% macro default() %}
   <div class="stage">
     <div class="stage__item">
-      <video class="stage__video" src="/placeholder/placeholder.mp4" controls type="video/mp4"
-             poster="//placehold.it/1297x730"></video>
+      <video class="stage__video" controls poster="//placehold.it/1297x730">
+        <source src="/placeholder/placeholder.mp4" type="video/mp4">
+      </video>
     </div>
   </div>
 {% endmacro %}
